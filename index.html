@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <!--Head-->
+    <head>
+        <meta charset="UTF-8">
+        <title>Stephanie Cadd</title>
+        <link rel="stylesheet" type="text/css" href="./CSS/Stylesheet.css">
+    </head>
+    <!--Body-->
+    <body class="bodybackground">
+
+    <!--Navigation-->
+        <div class="Navbar">
+            <a class="active" href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+    <!--Home-->
+       <br>
+       <br>
+
+    <!--Video-->
+        <div id="home">
+            <video style autoplay mute loop id="smokevideo">
+                <source src="./Content/video.mp4" type="video/mp4">
+            </video>
+        </div>
+
+    <!--Video Text-->
+        <div class="video_text">
+        <center><h1 style="color:#80CFDF";>Stephanie Cadd's Portfolio</h1><br>
+                <p>Welcome to my portfolio website! </p></center>
+        </div>
+
+    <!--About-->
+        <div class="Row" id="about">
+            <div class="column_2">
+                <img src="./Content/HTML_image.jpg">
+            </div>
+
+            <div class="column_1">
+                <h1>About</h1>
+                <p>I am a web developer and designer. I have experience writing code and making digital art.<br>
+                I am a future graduate of <a href="https://www.learncodinganywhere" target="_blank">The Tech Academy's</a> UI/UX 
+                Developer Boot Camp. I am trained in the following web developement languages: HTML, CSS, and Javascript.<br>
+                Alongside my coding knowledge, I have a certificate in Digital Art and a lot of expertise in the Arts.(creating logos and more). <br>
+                I would love to work with you on your project!<a href="#contact">Contact</a> me below!</p>
+            </div>
+        </div>
+
+    <!--Github-->
+        <div class="Row" id="projects">
+            <div class="column_1">
+                <h1>Github</h1>
+                <p>You can view my coding projects on Github here:<br>
+                <center><a href="https://github.com/stephaniecadd/HTML-and-CSS-Projects" alt="github">Github</a>
+                </center></p>
+            </div>
+
+            <div class="column_2">
+                <a href="https://github.com/stephaniecadd/HTML-and-CSS-Projects" target="_blank"><img src="./Content/GitHub.png"></a>
+            </div>
+        </div>
+
+    <!--Contact-->
+        <div class="Row" id="contact">
+            <div class="column_3">
+                <img src="./Content/Contact.jpg" alt="Digital_art" class="contactimage">
+            </div>
+
+            <div class="column_1">
+                <h1>Contact</h1>
+                <form action="" method="get">
+                    <label>Name:</label>
+                        <input type="text" placeholder="Please enter your name here"></input>
+                    <label>Email:</label>
+                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here"></intput>
+                    <label>Message:</label>
+                        <input type="text" id="Message" name="Message" placeholder="Please enter your message here"></intput>
+                        <input type="submit" value="Submit">
+                 </form>
+            </div>
+        </div>
+
+    <!--Footer-->
+        <footer>
+            <p>
+                <center>&copy Stephanie Cadd 2020 <a href="">Website</a></center>
+            </p>
+        </footer>
+
+    </body>
+</html>

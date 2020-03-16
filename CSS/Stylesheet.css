@@ -1,0 +1,196 @@
+/*Body*/
+Body {
+    margin: 0%;
+}
+
+/*Navigation*/
+.Navbar {
+    overflow: hidden;
+    background-color: #F6F6F6;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    display: flex; /*set to center menu links*/
+    justify-content: center;
+}
+/*Navigation Text*/
+.Navbar a {
+    display: inline-block;
+    color: #80CFDF;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Bellota Text' sans-serif;
+    font-size: 22px;
+    text-align: center;
+}
+/*Navigation Hover*/
+.Navbar a:hover {
+    background-color:#80CFDF;
+    color: #F6F6F6;
+}
+/*Navigation home button*/
+.Navbar a.active {
+    background-color: #E7F1F3; /*home button background*/
+}
+/*Video*/
+#smokevideo {
+    position: fixed;
+    right: 0;
+    bottom:0;
+    min-width:100%;
+    z-index:-1;
+}
+/*Video text*/
+.video_text {
+    background: rgba(0,0,0,0.5);
+    color: white;
+    width: 100%;
+    padding: 20px;
+    margin-top: 23%;
+}
+/*Table*/
+*{
+    box-sizing: border-box;
+}
+.column_1 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 1%;
+    height: 400px;
+    background-color: #F6F6F6;
+}
+.column_2 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top:1.9%;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.column_3 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top:3.5%;
+    height: 400px;
+    background-color:rgba(0, 0, 0, 0.8);
+}
+.Row:after {
+    content:"";/*blank to leave footer*/
+    display: table;
+    clear: both;
+}
+/*Heading 1 elements*/
+h1 {
+    text-transform: capitalize;
+    font-family: 'Bellota Text' sans-serif;
+    text-align: center;
+    margin-top: 3%;
+    color: #80CFDF;
+}
+/*Paragraph elements*/
+p {
+    font-family: 'Bellota Text' sans-serif;
+    text-align: center;
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/*centered text*/
+center {
+    font-family: 'Bellota Text' sans-serif;
+    text-align: center;
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/*Anchor elements*/
+a {
+    color: #426B73;
+    text-decoration: none;
+}
+/*image elements*/
+img {
+    filter: grayscale(75%);
+    border-radius: 4px;
+    max-width: 100%;
+    height: 340px;
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+}
+/*Contact*/
+input[type=text]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #80CFDF;
+    border-radius: 4px;
+    box-sizing:border-box;
+    margin-top:6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: 'Bellota Text' sans-serif;
+}
+/*Submit button*/
+input[type=submit] {
+    background-color: #80CFDF;
+    color: #F6F6F6;
+    font-weight: semi-bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Bellota Text' sans-serif;
+}
+/*Hover effect for submit*/
+input [type=submit]:hover {
+    background-color: #F6F6F6;
+    color: #80CFDF;
+    font-weight: semi-bold;
+    transform: scale(1.5);
+    transition: transform 1.5s;
+}
+/*form element*/
+form {
+    border-radius: 4 px;
+    background-color: #F6F6F6;
+    padding: 10px;
+    font-family: 'Bellota Text' sans-serif;
+}
+/*center align element hover effect*/
+center:hover {
+    transition: transform 2s;
+    transform: scale(1.1);
+}
+/*paragraph element hover effect*/
+p:hover {
+    color: #80CFDF;
+    transition: transform 1s;
+    transform: scale(1.01);
+}
+/*h1 element hover effect*/
+h1:hover {
+    color: black;
+    font-weight: normal;
+}
+/*image element hover effect*/
+img:hover {
+    filter: grayscale (5%);
+    transition: transform 1s;
+    transform: scale(1.1);
+}
+/*footer*/
+footer {
+    padding: 2%;
+    background-color: white;
+}
+/*contact image*/
+.contactimage {
+    height: 340px;
+    padding-bottom: 40px;
+}
