@@ -347,7 +347,7 @@ html {
   }
   
   /*Button for contact form*/
-  .Pop_Up_Button {
+  .open-button {
     bottom: 1.25vw;
     right: 1.25vw;
     width: 15vw;  
@@ -355,7 +355,6 @@ html {
     color: white;
     cursor: pointer;
     position: fixed;
-    border-radius: 10% 10%;
     -webkit-animation: movePopup 2s;
     animation: movePopup 2s;
   }
@@ -370,7 +369,7 @@ html {
   }
   
   /* Form styling */
-  .form-popup {
+  .form-container {
     max-width: 49vw;
     padding: 9px;
     background-color: rgba(0, 0, 0, 0.8);

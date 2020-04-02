@@ -5,11 +5,11 @@
         <meta charset="UTF-8">
         <title>Stephanie Cadd</title>
         <link rel="stylesheet" type="text/css" href="./CSS/Stylesheet.css">
-        <script src="JS/JavaScript.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     </head>
     <!-- Body -->
     <body class="bodybackground">
+                <script src="JS/JavaScript.js"></script>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <!-- Fade in effect -->
         <script>
             document.body.className += ' fade-out';
@@ -44,7 +44,7 @@
 
     <!--Video Text-->
         <div class="Video_Text">
-        <center><h1 style="color:white";>Stephanie Cadd's Portfolio</h1>
+        <center><h1 style="color:white"; >Stephanie Cadd's Portfolio</h1>
                 <p>
                         <center>
                             <q>Art is not what you see, but what you make others see.</q><br>
@@ -126,7 +126,7 @@
                 dots[i].className = dots[i].className.replace(" active", "");
             }
             slides[slideIndex-1].style.display = "block";
-            dots[slideIndex-1].className += " active";
+            //-dots[slideIndex-1].className += " active";
         }
     </script>
 
@@ -161,10 +161,9 @@
         </div>
 
     <!--Contact-->
-        <div id="Contact">
-            <button onclick="openForm()" class="Pop_Up_Button"> Contact </button>
+            <button onclick="openForm()" class="open-button"> Contact </button>
             <div class="form-popup" id="myForm">
-                <form action="https://formspree.io/xvobopkd" method="POST" class="form-container"></form>
+                <form action="https://formspree.io/xvobopkd" method="POST" class="form-container">
                 <h2>Contact</h2>
                     <input type="text" placeholder="Name" name="name" required>
                     <input type="text" placeholder="Phone Number" name="phone">	
@@ -176,12 +175,11 @@
              
                 </form>
             </div>
-        </div>
 
     <!--Footer-->
         <footer>
             <p>
-                <center>&copy Stephanie Cadd 2020 <a href="">Website</a></center>
+                <center>&copy; Stephanie Cadd 2020 <a href="">Website</a></center>
             </p>
         </footer>
 
