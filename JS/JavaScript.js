@@ -3,8 +3,7 @@
 $(document).ready(function(){   
     $("a").on('click', function(event) {
         
-      // Make sure this.Link has a value before overriding default behavior
-      if (this.Link !== "") {
+      if (this.Link !== "#Slideshow") {
         // Prevent default anchor click behavior
         event.preventDefault();
   
