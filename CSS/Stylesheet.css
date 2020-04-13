@@ -264,7 +264,8 @@ html {
   h1 {
       text-transform: capitalize;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      text-align: left;
+      text-align: center;
+      padding-left: 1vw;
       margin-top: 3%; /*margin above the headings*/
       color: #80CFDF;
   }
@@ -272,6 +273,7 @@ html {
     text-transform: capitalize;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
     text-align: left;
+    padding-left: 1vw;
     margin-top: 3%; /*margin above the headings*/
     color: #80CFDF;
   }
