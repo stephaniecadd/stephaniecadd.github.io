@@ -264,21 +264,21 @@ html {
   h1 {
       text-transform: capitalize;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      text-align: center;
+      text-align: left;
       margin-top: 3%; /*margin above the headings*/
       color: #80CFDF;
   }
   h2 {
     text-transform: capitalize;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-    text-align: center;
+    text-align: left;
     margin-top: 3%; /*margin above the headings*/
     color: #80CFDF;
   }
   /* Paragraph elements */
   p {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      text-align: center;
+      text-align: left;
       letter-spacing: .1vw; 
       line-height: 1.75vw;
       font-size: .9vw;
