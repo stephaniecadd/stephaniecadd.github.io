@@ -9,7 +9,7 @@ html {
       opacity: 1; /*fade in effect*/
       transition: 2s opacity; /*This causes a 3 second fade in*/
       letter-spacing: .1vw;
-      font-family: 'Lato', sans-serif;
+      font-family: 'Open Sans', sans-serif;
       font-size: 1vw;
       
       }
@@ -40,7 +40,7 @@ html {
       color: #80CFDF; /*font color for navbar*/
       padding: .75vw 1vw; /*padding around our text*/
       text-decoration: none; 
-      font-family: 'Lato', sans-serif;
+      font-family: 'Open Sans', sans-serif;
       font-size: 1vw; /*font size for navbar*/
       text-align: center; 
       position: relative;
@@ -186,7 +186,7 @@ html {
     bottom: 0;
     width: 100%;
     text-align: center;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     letter-spacing: .1vw; 
     font-size: 1vw;
     color: white;
@@ -200,7 +200,7 @@ html {
     color: #80CFDF;
     position: absolute;
     top: 0;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     letter-spacing: .1vw; 
     font-size: .5vw;
     display: none;
@@ -263,7 +263,7 @@ html {
   /* Heading 1 elements */
   h1 {
       text-transform: capitalize;
-      font-family: 'Work Sans', sans-serif;
+      font-family: 'Lato', sans-serif;
       font-weight: 500;
       text-align: left;
       padding-left: 4vw;
@@ -275,7 +275,7 @@ html {
   }
   h2 {
     text-transform: capitalize;
-    font-family: 'Work Sans', sans-serif; 
+    font-family: 'Lato', sans-serif; 
     font-weight: 500;
     text-align: left;
     padding-left: 1vw;
@@ -284,9 +284,9 @@ html {
   }
   /* Paragraph elements */
   p {
-      font-family: 'Lato', sans-serif;
+      font-family: 'Open Sans', sans-serif;
       text-align: left;
-      letter-spacing: .1vw; 
+      letter-spacing: 0.05vw; 
       line-height: 2vw;
       font-size: .9vw;
       padding-left: 4vw;
@@ -296,7 +296,7 @@ html {
   
   /* Center align elements - this embraces all centered text */
   center {
-      font-family: 'Lato', sans-serif;
+      font-family: 'Open Sans', sans-serif;
       text-align: center;
       letter-spacing: .1vw;
       font-size: 1vw;
@@ -391,7 +391,7 @@ html {
     margin: .6vw 0 .6vw 0;
     background: white;
     border: solid azure;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 1vw; 
   }
   /* Submit button */
@@ -412,7 +412,7 @@ html {
   
   /* Button styling */
   button {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     letter-spacing: .3vw; 
     font-size: 1vw;
     padding: .5vw .5vw;
