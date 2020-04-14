@@ -242,7 +242,7 @@ html {
       float: left;  
       width: 50%; /*one column takes up half the page width*/
       padding: 1.6%; 
-      background-color:rgb(251, 255, 255); 
+      background-color:rgba(251, 255, 255, 0.95); 
       height: 448px; 
   }
   
