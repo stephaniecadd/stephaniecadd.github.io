@@ -279,6 +279,13 @@ html {
     text-align: center;
     padding-left: 0px;
   }
+  .portfoliotxt {
+    text-align: center;
+    margin-top: -60px;
+    padding-bottom: 20px;
+    z-index: 100;
+    color: white;
+  }
   h2 {
     text-transform: capitalize;
     font-family: 'Lato', sans-serif; 
