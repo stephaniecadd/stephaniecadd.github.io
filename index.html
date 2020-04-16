@@ -23,9 +23,9 @@
     <!--Navigation-->
         <div class="Navbar">
             <a class="active" href="#Home">Home</a>
-            <a href="#Slideshow">Slideshow</a>
             <a href="#About">About</a>
-            <a href="#Projects">Projects</a>
+            <a href="#projects">Projects</a>
+            <a href="#Gallery">Gallery</a>
             <a onclick="openForm()">Contact</a>
         </div>
 
@@ -34,26 +34,87 @@
     <!--Home-->
     <div id="Home"><br>
        <br>
-
-    <!--Video-->
-        
-            <video style autoplay mute loop id="smokevideo">
-                <source src="./Content/video.mp4" type="video/mp4">
-            </video>
-        </div>
-
-    <!--Video Text-->
-        <div class="Video_Text">
+    <!--Banner Text-->
+    <div class="Banner_Text">
         <h1 class="slideshowhead" style="color:white" >Stephanie Cadd's Portfolio</h1>
-                <p>
+            <!--  <p>
                         <center>
                             <q>Art is not what you see, but what you make others see.</q><br>
                             -Edgar Degas<br><br>
-                            Welcome to my portfolio website.
                         </center>
-                </p>
+                </p>--> 
+        </div>
+    <!--Banner-->
+        <img id='banner'src="Content/Mandala.png">
+           <!-- <video style autoplay mute loop id="smokevideo">
+                <source src="./Content/video.mp4" type="video/mp4">
+            </video>-->
+
         </div>
 
+        <!--Contact-->
+        <div class="formbutton">
+            <button onclick="openForm()" class="open-button"> Contact Me! </button>
+        </div>
+        <div class="form-popup" id="myForm">
+            <form action="https://formspree.io/xvobopkd" method="POST" class="form-container">
+            <h2>Contact</h2>
+                <input type="text" placeholder="Name" name="name" required>
+                <input type="text" placeholder="Phone Number" name="phone">	
+                <input type="text" placeholder="Email" name="email" required>
+                <input type="text" placeholder="Detailed Message" name="message">
+
+        <button type="submit" class="btn">Submit</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        
+            </form>
+        </div>
+
+        <!--About-->
+        <div class="Row" id="About">
+            
+            <div class="Column_1">
+                <h1>About Me</h1>
+                <p>I am a web developer and graphic designer. I write code to build beautiful websites and use illustrator and photoshop 
+                    to design or edit images. I am a graduate of <a href="https://www.learncodinganywhere" target="_blank">The Tech Academy's</a> 
+                    UI/UX Developer Boot Camp in which I trained in the following web developement languages: HTML, CSS, and Javascript.<br><br>
+                    Alongside my coding knowledge, I have a certificate in Digital Art and a lot of expertise in the Arts. I can build you a 
+                    website, edit your images and even make you a logo. I would love to work with you on your project!<br><br><a href="#Contact">
+                    Contact</a> me below!</p>
+            </div>
+
+            <div class="Column_2">
+                <img class="Expand" src="./Content/Contact2.jpg">
+            </div>
+
+        </div>
+
+    <!--Projects-->
+        <div class="Row" id="projects">
+
+            <div class="Column_3">
+                <img style="height: 275px"; class="Expand" src="./Content/Contact.jpg">
+            </div>
+
+            <div class="Column_3">
+                <h1>Projects</h1>
+                <p>I have created websites using HTML, CSS and Javascript. I have also created Databases and 
+                    have knowledge in various programming languages. You can view my coding projects on Github here:<br>
+                <center><a href="https://github.com/stephaniecadd/HTML-and-CSS-Projects" alt="github">Github</a>
+                </center></p>
+            </div>
+
+            
+        </div>
+
+        <div class="Row" id="Gallery">
+            <div class="Column_3">
+                <h1>Gallery</h1>
+                <p>Take a look at some of my work below:</p>
+            </div>
+        </div>
+    
+        
         <!-- Slideshow section -->
         <div id="Slideshow">
             <div id="Slideshow_Background">
@@ -62,26 +123,26 @@
                     <div class="mySlides fade">
                         <div class="Slide_Number">1 / 4</div>
                         <img class="Slide_Show_Images" src="Content/WPWebsite.png" style="width: 100%">
-                        <div class="text">I am a web developer trained in HTML, CSS and JavaScript.</div>
+                        <div class="text">HTML, CSS and JavaScript</div>
                     </div>
                     
                     <div class="mySlides fade">
                         <div class="Slide_Number">2 / 4</div>
-                        <img class="Slide_Show_Images" src="Content/DigitalArtsIcon.png" style="width: 100%">
-                        <div class="text">I am experienced in Digital Art as well as Photoshop.</div>
+                        <img class="Slide_Show_Images" src="Content/StephCadd_Artichokes.gif" style="width: 100%">
+                        <div class="text">Digital Art</div>
                     </div>
 
                     <div class="mySlides fade">
                         <div class="Slide_Number">3 / 4</div>
                         <img class="Slide_Show_Images" src="Content/Photoshop.png" style="width: 100%">
-                        <div class="text">I can edit and create photos to put on your website!</div>
+                        <div class="text">Photoshop</div>
                     </div>
 
                     <div class="mySlides fade">
                         <div class="Slide_Number">4 / 4</div>
-                        <img class="Slide_Show_Images" src="Content/Contact2.jpg" style="width: 100%">
+                        <img class="Slide_Show_Images" src="Content/StephCadd_Sequence.jpg" style="width: 100%">
                         <div class="text">
-                            <a class="slideshowlink" onclick="openForm()" href="#Contact">I would love to help you with your project! Contact me now!</a>
+                            <a class="slideshowlink" onclick="openForm()" href="#Contact">Contact me now!</a>
                     </div>
                 </div>
 
@@ -130,51 +191,9 @@
         }
     </script>
 
-    <!--About-->
-        <div class="Row" id="About">
-            <div class="Column_2">
-                <img class="Expand" src="./Content/HTML_image.jpg">
-            </div>
+    
 
-            <div class="Column_1">
-                <h1>About</h1>
-                <p>I am a web developer and designer. I have experience writing code and making digital art. I am a future graduate of 
-                <a href="https://www.learncodinganywhere" target="_blank">The Tech Academy's</a> UI/UX Developer Boot Camp. 
-                I am trained in the following web developement languages: HTML, CSS, and Javascript.<br><br>
-                Alongside my coding knowledge, I have a certificate in Digital Art and a lot of expertise in the Arts(creating logos and more). 
-                I would love to work with you on your project!<br><br><a href="#Contact">Contact</a> me below!</p>
-            </div>
-        </div>
 
-    <!--Github-->
-        <div class="Row" id="projects">
-            <div class="Column_1">
-                <h1>Github</h1>
-                <p>You can view my coding projects on Github here:<br>
-                <center><a href="https://github.com/stephaniecadd/HTML-and-CSS-Projects" alt="github">Github</a>
-                </center></p>
-            </div>
-
-            <div class="Column_2">
-                <a href="https://github.com/stephaniecadd/HTML-and-CSS-Projects" target="_blank"><img class="Expand" src="./Content/GitHub.png"></a>
-            </div>
-        </div>
-
-    <!--Contact-->
-            <button onclick="openForm()" class="open-button"> Contact </button>
-            <div class="form-popup" id="myForm">
-                <form action="https://formspree.io/xvobopkd" method="POST" class="form-container">
-                <h2>Contact</h2>
-                    <input type="text" placeholder="Name" name="name" required>
-                    <input type="text" placeholder="Phone Number" name="phone">	
-                    <input type="text" placeholder="Email" name="email" required>
-                    <input type="text" placeholder="Detailed Message" name="message">
-
-          <button type="submit" class="btn">Submit</button>
-          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-             
-                </form>
-            </div>
 
     <!--Footer-->
         <footer>
