@@ -478,3 +478,8 @@ html {
       padding: 2%;
       background-color:white;
   }
+  @media (max-width: 600px) {
+    .Navbar, .Home, .Column_1, .Column_2, .Column_3 {
+      width: 100%;
+      height: auto;
+    } }
