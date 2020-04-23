@@ -73,15 +73,14 @@ html {
   .Navbar a:hover {
     background-color:; /* background color when you hover over the text*/
     color: white; /*font color when you hover over the text*/ 
-    border: 1px solid white;
-    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
     cursor: pointer;
     text-decoration: none;
   }
   
   /* Navbar home button */
   .Navbar a.active { 
-    background-color: rgba(255, 255, 255, 0.1);  /*background color behind the Home button*/ 
+    background-color: rgba(255, 255, 255, 0.3);  /*background color behind the Home button*/ 
   }
   
   /*video to zoom out from a zoomed in position upon page load 
@@ -370,11 +369,13 @@ html {
       transition: transform 1s;
       transform: scale(1.05);
       filter: drop-shadow(8px 8px 10px gray);
+      border-radius: 10%;
   }
   .Expand2:hover {
     transition: transform 1s;
     transform: scale(1.05);
     filter: drop-shadow(8px 8px 10px gray);
+    border-radius: 10%;
 }
   .Slide_Show_Images {
     filter: drop-shadow(8px 8px 10px gray);
@@ -397,7 +398,7 @@ html {
     background-color: white;
     color: #25b6b8;
     border: 1px solid #25b6b8;
-    border-radius: 10px;
+    border-radius: 2vh;
     cursor: pointer;
     position: absolute;
     -webkit-animation: movePopup 2s;
@@ -428,7 +429,7 @@ html {
     padding: 9px;
     background-color: white;
     border: 1px solid #25b6b8;
-    border-radius: 10px;
+    border-radius: 2vh;
   }
   
   /* Input fields */
@@ -438,8 +439,8 @@ html {
     padding: .65vw;
     margin: .6vw 0 .6vw 0;
     background: white;
-    border: 1px solid #25b6b8;
-    border-radius: 10px;
+    border: .1vh solid #25b6b8;
+    border-radius: 2vh;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.5vh; 
   }
@@ -447,8 +448,8 @@ html {
   .form-popup .btn {
     background-color: white;
     color: #25b6b8;
-    border: 1px solid #25b6b8;
-    border-radius: 10px;
+    border: .1vh solid #25b6b8;
+    border-radius: 2vh;
     margin-bottom:1vh;
     margin-left: 65px;
     width: 250px;
@@ -458,8 +459,8 @@ html {
   .form-popup .cancel {
     background-color: white;
     color: #25b6b8;
-    border: 1px solid #25b6b8;
-    border-radius: 10px;
+    border: .1vh solid #25b6b8;
+    border-radius: 2vh;
     width: 250px;
   }
   
@@ -499,6 +500,13 @@ html {
       width: 100%;
       height: auto;
     } }
+  /*banner*/
+    @media (max-width: 600px) {
+      #banner {
+        height:60vh;
+        width: auto;
+        margin-left: -43vw;
+      } }
   /*Images*/
   @media (max-width: 600px) {
       .Expand2{
