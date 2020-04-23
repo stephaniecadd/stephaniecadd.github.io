@@ -500,13 +500,7 @@ html {
       width: 100%;
       height: auto;
     } }
-  /*banner*/
-    @media (max-width: 600px) {
-      #banner {
-        height:60vh;
-        width: auto;
-        margin-left: -43vw;
-      } }
+
   /*Images*/
   @media (max-width: 600px) {
       .Expand2{
