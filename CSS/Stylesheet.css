@@ -506,19 +506,15 @@ html {
         height: auto;
       } }
   @media (max-width: 600px) {
-      .Expand1{
+      .Expand1, .open-button{
         display: none;
       } }
 
-  /*button*/
-  @media (max-width: 600px) {
-        .open-button{
-          display:none;
-        } }
   /*banner text*/
   @media (max-width: 600px) {
     .portfoliotxt {
-      margin: 0;
+      margin-top: 4vh;
+      margin-bottom: -2vh;
       padding: 0;
       color: #25b6b8;
     } }
