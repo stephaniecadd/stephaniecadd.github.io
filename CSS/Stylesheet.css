@@ -14,6 +14,7 @@ html {
       
       }
 
+
   /*fade effect for the page when the page is loaded*/
   body.fade-out {
       opacity: .1; /*level of opacity*/
@@ -41,7 +42,7 @@ html {
       padding: .75vw 1vw; /*padding around our text*/
       text-decoration: none; 
       font-family: 'Open Sans', sans-serif;
-      font-size: 1vw; /*font size for navbar*/
+      font-size: 1.5vh; /*font size for navbar*/
       text-align: center; 
       position: relative;
       -webkit-animation: movenavText 2.25s; /* Safari 4.0 - 8.0 */
@@ -291,6 +292,7 @@ html {
     text-transform: capitalize;
     font-family: 'Lato', sans-serif; 
     font-weight: 500;
+    font-size: 2vh;
     text-align: left;
     padding-left: 1vw;
     margin-top: 3%; /*margin above the headings*/
@@ -323,6 +325,7 @@ html {
       color: rgb(104, 104, 104); 
       text-decoration: none;
       font-weight: 600;
+      font-size: 1.5vh;
   }
   a:hover {
     color: #d16900; 
@@ -330,12 +333,18 @@ html {
   }
 
   /*Images*/
-.Expand {
-      max-width: 100%; 
-      height: auto;
+.Expand1 {
+      max-height: 75%; 
+      width: auto;
       margin: auto auto auto auto;
       display: block;
   }
+  .Expand2 {
+    max-height: 110%; 
+    width: auto;
+    margin: auto auto auto auto;
+    display: block;
+}
   
   /* Center align element hover effect */
   center:hover {
@@ -357,11 +366,16 @@ html {
   }
   
   /* Image element hover effects */
- .Expand:hover {
+ .Expand1:hover {
       transition: transform 1s;
       transform: scale(1.05);
       filter: drop-shadow(8px 8px 10px gray);
   }
+  .Expand2:hover {
+    transition: transform 1s;
+    transform: scale(1.05);
+    filter: drop-shadow(8px 8px 10px gray);
+}
   .Slide_Show_Images {
     filter: drop-shadow(8px 8px 10px gray);
   }
@@ -427,7 +441,7 @@ html {
     border: 1px solid #25b6b8;
     border-radius: 10px;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1vw; 
+    font-size: 1.5vh; 
   }
   /* Submit button */
   .form-popup .btn {
@@ -453,7 +467,7 @@ html {
   button {
     font-family: 'Open Sans', sans-serif;
     letter-spacing: .3vw; 
-    font-size: 1vw;
+    font-size: 1.5vh;
     padding: .5vw .5vw;
     cursor: pointer;
     width: 100%;
@@ -479,8 +493,39 @@ html {
       padding: 2%;
       background-color:white;
   }
+  /*mobile responsive*/
   @media (max-width: 600px) {
     .Navbar, .Home, .Column_1, .Column_2, .Column_3 {
       width: 100%;
       height: auto;
     } }
+  /*Images*/
+  @media (max-width: 600px) {
+      .Expand2{
+        width: 50%;
+        height: auto;
+      } }
+  @media (max-width: 600px) {
+      .Expand1{
+        display: none;
+      } }
+
+  /*button*/
+  @media (max-width: 600px) {
+        .open-button{
+          padding: 1vh;
+          margin-top: 4vh;
+        } }
+  /*banner text*/
+  @media (max-width: 600px) {
+    .portfoliotxt {
+      margin: 0;
+      padding: 0;
+      color: #25b6b8;
+    } }
+/*form*/
+@media (max-width: 600px) {
+  .form-container {
+    max-width: 100vw;
+    height: 35vh;
+  } }
