@@ -513,8 +513,7 @@ html {
   /*button*/
   @media (max-width: 600px) {
         .open-button{
-          padding: 1vh;
-          margin-top: 4vh;
+          display:none;
         } }
   /*banner text*/
   @media (max-width: 600px) {
