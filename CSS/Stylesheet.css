@@ -63,12 +63,6 @@ html {
   }
   
   
-  /*overlay video text to move up from the bottom of the page*/
-  @keyframes movevideoText {
-    from {top: -100vw;}
-    to {top: 0px;}
-  }
-  
   /* Navbar hover effect */
   .Navbar a:hover {
     background-color:; /* background color when you hover over the text*/
@@ -95,15 +89,14 @@ html {
   */
   
   #banner{
-    right: 0; /*no space between the edge of the video and the edge of the page*/
-    bottom: 0; /*no space between the edge of the video and the edge of the page*/
+    right: 0; /*no space between the edge of the banner and the edge of the page*/
     top: 0;
     width: 100%;
     z-index: -1;
     position: relative;
   }
   
-  /* Text over the video */ 
+  /* Text over the banner */ 
   .Banner_Text { 
       background: rgba(255, 255, 255, 0.1); /*semi-transparent background*/
       color: white; 
@@ -434,15 +427,19 @@ html {
       width: 100%;
       height: auto;
     } }
-
-  /*Images*/
   @media (max-width: 600px) {
-      .Expand2{
+    .Navbar>a {
+      font-size: 2vh;
+    }}
+  /*Image About*/
+  @media (max-width: 600px) {
+      .Expand1{
         width: 50%;
         height: auto;
       } }
+  /*hide contact button*/
   @media (max-width: 600px) {
-      .Expand1, .open-button{
+      .open-button{
         display: none;
       } }
 
@@ -454,12 +451,26 @@ html {
       padding: 0;
       color: #25b6b8;
     } }
+
 /*form*/
 @media (max-width: 600px) {
   .form-container {
     max-width: 100vw;
-    height: 35vh;
+    height: 40vh;
   } }
+  /*input fields*/
+  @media (max-width: 600px) {
+    input {
+      max-width: 100vw;
+      height: 5vh;
+    } }
+    /*banner*/
+    @media (max-width: 600px) {
+      #banner {
+        width: 150%;
+        margin-left: -25vw;
+      }
+    }
   
   /* Responsive layout - makes a one column-layout instead of three columns */
   @media screen and (max-width: 800px) {
@@ -471,7 +482,7 @@ html {
   
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
-    .column {
+    .imgcolumn {
       flex: 100%;
       max-width: 100%;
     }
