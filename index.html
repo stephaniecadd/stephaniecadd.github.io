@@ -30,27 +30,22 @@
             <a href="#Gallery">Gallery</a>
             <a onclick="openForm()">Contact</a>
         </div>
-
         <div class="btn cancel" onclick="closeForm()"></div>
+    <!--End Navigation-->
 
     <!--Home-->
     <div id="Home"><br>
        <br>
     <!--Banner Text-->
     <div class="Banner_Text">
-        <h1 class="slideshowhead" style="color:white" >Web Developement, Design and Digital Art.</h1><br>
-            <!--  <p>
-                        <center>
-                            <q>Art is not what you see, but what you make others see.</q><br>
-                            -Edgar Degas<br><br>
-                        </center>
-                </p>--> 
+        <h1 class="bannerhead" style="color:white" >Stephanie Cadd's Portfolio</h1><br>
         </div>
         
     <!--Banner-->
         <img id='banner'src="Content/Mandala.png">
-        <h2 class="portfoliotxt">Stephanie Cadd's Portfolio</h2>
+        <h2 class="portfoliotxt">Web design, developement and Graphic Design.</h2>
         </div>
+    <!--End Banner-->
 
         <!--Contact-->
         <div class="formbutton">
@@ -62,13 +57,14 @@
                 <input type="text" placeholder="Name" name="name" required>
                 <input type="text" placeholder="Phone Number" name="phone">	
                 <input type="text" placeholder="Email" name="email" required>
-                <input type="text" placeholder="Detailed Message" name="message">
+                <input type="text" placeholder="Message" name="message">
 
         <button type="submit" class="btn">Submit</button>
         <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
         
             </form>
         </div>
+        <!--End Contact-->
 
         <!--About-->
         <div class="Row" id="About">
@@ -86,121 +82,47 @@
             <div class="Column_2">
                 <img class="Expand1" src="./Content/Contact2.jpg">
             </div>
-
         </div>
+        <!--End About-->
 
-    <!--Projects-->
+        <!--Projects-->
         <div class="Row" id="projects">
 
-            <div class="Column_3">
-                <img class="Expand2" src="./Content/DigitalArtsIcon.png">
-            </div>
-
-            <div class="Column_3">
+            <div class="Projects">
                 <h1>Projects</h1>
                 <p>I have created websites using HTML, CSS and Javascript. I have also created Databases and 
-                    have knowledge in various programming languages. You can view my coding projects on Github here:<br>
-                <center><a href="https://github.com/stephaniecadd/HTML-and-CSS-Projects" alt="github">Github</a>
-                </center></p>
+                    have knowledge in various programming languages. You can view my coding projects on Github here: 
+                <a href="https://github.com/stephaniecadd/HTML-and-CSS-Projects" alt="github">Github</a></p>
             </div>
-            
-
-            
         </div>
+        <!--End Projects-->
 
+        <!--Gallery-->
         <div class="Row" id="Gallery">
-            <div class="Column_3">
                 <h1>Gallery</h1>
-                <p>Take a look at some of my work below:</p>
-            </div>
-        </div>
-    
-        
-        <!-- Slideshow section -->
-        <div id="Slideshow">
-            <div id="Slideshow_Background">
-                <div id="Slideshow_Container">
-
-                    <div class="mySlides fade">
-                        <div class="Slide_Number">1 / 4</div>
-                        <img class="Slide_Show_Images" src="Content/WPWebsite.png" style="width: 100%">
-                        <div class="text">HTML, CSS and JavaScript</div>
-                    </div>
-                    
-                    <div class="mySlides fade">
-                        <div class="Slide_Number">2 / 4</div>
-                        <img class="Slide_Show_Images" src="Content/StephCadd_Artichokes.gif" style="width: 100%">
-                        <div class="text">Digital Art</div>
-                    </div>
-
-                    <div class="mySlides fade">
-                        <div class="Slide_Number">3 / 4</div>
-                        <img class="Slide_Show_Images" src="Content/Photoshop.png" style="width: 100%">
-                        <div class="text">Photoshop</div>
-                    </div>
-
-                    <div class="mySlides fade">
-                        <div class="Slide_Number">4 / 4</div>
-                        <img class="Slide_Show_Images" src="Content/StephCadd_Sequence.jpg" style="width: 100%">
-                        <div class="text">
-                            <a class="slideshowlink" onclick="openForm()" href="#Contact">Contact me now!</a>
-                    </div>
+                <p>Take a look at some of my Graphic Design work below:</p>
+                <!--new gallery-->
+            <div class="GalleryGrid">
+                <div class="imgcolumn">
+                <img src="Content/MockupAssignment.jpg" alt="">
+                <img src="Content/StephCadd_Artichokes.gif" alt="">
                 </div>
-
-                <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="Next" onclick="plusSlides(1)">&#10095;</a>
-            
+                <div class="imgcolumn">
+                <img src="Content/AssignmentSplitScreen.jpg" alt="">
+                <img src="Content/StephCadd_Sequence.jpg" alt="">
+                </div>
+                <div class="imgcolumn">
+                <img src= "Content/AssignmentMagazine.jpg" alt="">
+                <img src="Content/Photoshop.png" alt="">
+                </div>
             </div>
-            <br>
-
-            <!-- <div style="text-align:center">
-
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-
-            </div> -->
-            
+            <a href="https://dribbble.com/StephanieCadd" target="_blank"><button>View more</button></a>
         </div>
-    </div>
-
-    <!--JS-->
-    <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            if (n > slides.length) {slideIndex = 1}
-            if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block";
-            //-dots[slideIndex-1].className += " active";
-        }
-    </script>
-
+        <!--End Gallery-->
     
-
-
-
     <!--Footer-->
         <footer>
-            <p>
-                <center>&copy; Stephanie Cadd 2020 <a href="">Website</a></center>
-            </p>
+            <p>&copy; 2020 Stephanie Cadd</p>
         </footer>
 
     </body>
