@@ -461,11 +461,11 @@ html {
     height: 35vh;
   } }
   
-  /* Responsive layout - makes a two column-layout instead of four columns */
+  /* Responsive layout - makes a one column-layout instead of three columns */
   @media screen and (max-width: 800px) {
-    .column {
-      flex: 50%;
-      max-width: 50%;
+    .imgcolumn {
+      flex: 100%;
+      max-width: 100%;
     }
   }
   
