@@ -1,2 +1,3 @@
 # stephaniecadd.github.io
-Stephanie Cadd's Portfolio Website
+
+My Portfolio Website
