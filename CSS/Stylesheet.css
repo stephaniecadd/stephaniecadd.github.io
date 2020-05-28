@@ -445,7 +445,7 @@ html {
         height: auto;
       } }
   /*hide contact button*/
-  @media (max-width: 800px) {
+  @media (max-width: 1024px) {
       .open-button{
         display: none;
       } }
