@@ -430,7 +430,7 @@ html {
   }
   /*mobile responsive*/
   @media (max-width: 600px) {
-    .Navbar, .Home, .Column_1, .Column_2, .Column_3 {
+    .Navbar, .Home, .Column_1, .Column_2, .Column_3, .Row{
       width: 100%;
       height: auto;
     } }
