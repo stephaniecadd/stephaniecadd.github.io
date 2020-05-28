@@ -445,7 +445,7 @@ html {
         height: auto;
       } }
   /*hide contact button*/
-  @media (max-width: 600px) {
+  @media (max-width: 800px) {
       .open-button{
         display: none;
       } }
@@ -453,10 +453,11 @@ html {
   /*banner text*/
   @media (max-width: 600px) {
     .portfoliotxt {
-      margin-top: 4vh;
-      margin-bottom: -2vh;
+      font-size:2vh;
+      margin-bottom: 0vh;
       padding: 0;
       color: #25b6b8;
+      display: none;
     } }
 
 /*form*/
@@ -474,23 +475,36 @@ html {
     /*banner*/
     @media (max-width: 600px) {
       #banner {
-        width: 150%;
-        margin-left: -25vw;
+        width: 100%;
+        padding-bottom: 0vh;
+        margin-left: 0vw;
       }
     }
   
   /* Responsive layout - makes a one column-layout instead of three columns */
   @media screen and (max-width: 800px) {
     .imgcolumn {
-      flex: 100%;
-      max-width: 100%;
+      flex:50%;
+      max-width: 50%;
     }
   }
   
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
     .imgcolumn {
-      flex: 100%;
-      max-width: 100%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .Row button {
+      padding-right: 15vw;
+      padding-left: 7vw;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .Projects button {
+      padding-right: 15vw;
+      padding-left: 5vw;
     }
   }
