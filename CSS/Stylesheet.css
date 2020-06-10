@@ -181,12 +181,6 @@ html {
       padding: 0px;
     }
     
-    /* Create three equal columns that floats next to each other */
-    .column {
-      float: left;
-      width: 33.33%;
-      display: none; /* Hide columns by default */
-    }
     
     /* Clear floats after rows */
     .row:after {
@@ -194,17 +188,23 @@ html {
       display: table;
       clear: both;
     }
-    
+     /* Create three equal columns that floats next to each other */
+     .column {
+      float: left;
+      flex: 33.33%;
+      max-width: 33.33%;
+      display: none; /* Hide columns by default */
+    }
     /* Content */
     .content {
       padding: 1vw 1vw;
       display: flex;
       flex-wrap: wrap;
-      
     }
     .content image{
       padding: 1vh;
       vertical-align: middle;
+      width: 100%;
     }
     
     /* The "show" class is added to the filtered elements */
@@ -458,7 +458,7 @@ html {
   }
   
   /* Button styling */
-  .btn {
+  .btn{
     font-family: 'Open Sans', sans-serif;
     letter-spacing: .3vw; 
     font-size: 1.8vh;
@@ -498,7 +498,7 @@ html {
     } }
   @media (max-width: 600px) {
     .Navbar>a {
-      font-size: 2vh;
+      font-size: 1.5vh;
     }}
   /*Image About*/
   @media (max-width: 600px) {
@@ -545,15 +545,15 @@ html {
   
   /* Responsive layout - makes a one column-layout instead of three columns */
   @media screen and (max-width: 800px) {
-    .content {
-      flex:100%;
+    .column {
+      flex: 100%;
       max-width: 100%;
     }
   }
   
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
-    .content {
+    .column {
       flex: 100%;
       max-width: 100%;
     }
@@ -562,6 +562,13 @@ html {
     .Row button {
       padding-right: 15vw;
       padding-left: 7vw;
+    }
+    .pbtn {
+      width: 25vw;
+      margin: 3vw 1vw;
+    }
+    .pbtn All {
+      display: none;
     }
   }
   @media screen and (max-width: 800px) {
