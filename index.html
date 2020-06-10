@@ -28,9 +28,9 @@
     <!--Navigation-->
         <div class="Navbar">
             <a class="active" href="#Home">Home</a>
-            <a href="#About">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#Gallery">Gallery</a>
+            <a href="#About">About Me</a>
+            <a href="#Portfolio">Portfolio</a>
+            <a href="#projects">Web Development</a>
             <a onclick="openForm()">Contact</a>
             <a href="https://www.linkedin.com/in/stephanie-cadd/" target="_blank"><i class="fab fa-linkedin-in" style="color: white;"></i></a>
         </div>
@@ -42,12 +42,12 @@
        <br>
     <!--Banner Text-->
     <div class="Banner_Text">
-        <h1 class="bannerhead" style="color:white" >Stephanie Cadd's Portfolio</h1><br>
+        <h1 class="bannerhead" style="color:white" >Web Design and Development | Graphic Design</h1><br>
         </div>
         
     <!--Banner-->
         <img id='banner'src="Content/Mandala.png">
-        <h2 class="portfoliotxt">Web design, developement and Graphic Design.</h2>
+
         </div>
     <!--End Banner-->
 
@@ -75,12 +75,12 @@
             
             <div class="Column_1">
                 <h1>About Me</h1>
-                <p>I am a web developer and graphic designer. I write code to build beautiful websites and use illustrator and photoshop 
+                <p>I am a web designer/developer and graphic designer. I write code to build beautiful websites and use illustrator and photoshop 
                     to design or edit images. I am a graduate of <a href="https://www.learncodinganywhere" target="_blank">The Tech Academy's</a> 
                     UI/UX Developer Boot Camp in which I trained in the following web developement languages: HTML, CSS, and Javascript. 
                     <a href="Content/Resume.pdf" target="_blank">Click here to view my Resume.</a><br>
                     <br><br>
-                    Alongside my coding knowledge, I have a certificate in Digital Art and a lot of expertise in the Arts. I can build you a 
+                    Alongside my coding knowledge, I have a certificate in Digital Art and a lot of expertise in design. I can build you a 
                     website, edit your images and even make you a logo. I would love to work with you on your project!
                     <br><br>
                     <a onclick="openForm()">
@@ -93,40 +93,83 @@
         </div>
         <!--End About-->
 
-        
+        <!--Portfolio-->
+        <div id="Portfolio">
+            <h2>Portfolio</h2>
+    <div id="myBtnContainer">
+    <button class="pbtn active" onclick="filterSelection('all')"> Show All</button>
+    <button class="pbtn" onclick="filterSelection('WebsiteDesign')"> Website Design</button>
+    <button class="pbtn" onclick="filterSelection('LogoCreation')"> Logo Creation</button>
+    <button class="pbtn" onclick="filterSelection('GraphicDesign')"> Graphic Design</button>
+    </div>
 
-        <!--Gallery-->
-        <div class="Row" id="Gallery">
-                <h1>Gallery</h1>
-                <p>I also work in Adobe Photoshop, Adobe Illustrator and Adobe XD to create wireframes, mockups and much more. I can edit and create images for 
-                    your project. Take a look at some of my Graphic Design work below:</p>
-                <!--new gallery-->
-            <div class="GalleryGrid">
-                <div class="imgcolumn">
-                <img src="Content/CanyonHikersMockup.jpg" alt="">
-                <img src="Content/DandelionLogo.png" alt="">
-                </div>
-                <div class="imgcolumn">
-                <img src= "Content/AssignmentSplitScreen.jpg" alt="">
-                <img src="Content/MockupAssignment.jpg" alt="">
-                <img src="Content/UCLogo.png" alt="">
-                
-                </div>
-                <div class="imgcolumn">
-                <img src="Content/Home-Desktop.png" alt="">
-                <img src="Content/EAVLogo.png" alt="">
-                </div>
-            </div>
-            <a href="https://dribbble.com/StephanieCadd" target="_blank"><button>View more</button></a>
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+    <div class="column WebsiteDesign">
+        <div class="content">
+        <img src="Content/Home-Desktop.png" alt="Mountains" style="width:100%">
         </div>
-        <!--End Gallery-->
+    </div>
+    <div class="column WebsiteDesign">
+        <div class="content">
+        <img src="Content/AssignmentSplitScreen.jpg" alt="Lights" style="width:100%">
+        </div>
+        <div class="content">
+        <img src="Content/MockupAssignment.jpg" style="width:100%">
+        </div>
+    </div>
+    <div class="column WebsiteDesign">
+        <div class="content">
+        <img src="Content/CanyonHikersMockup.jpg" alt="Nature" style="width:100%">
+        </div>
+    </div>
+    </div>
+    <div class="row">
+    <div class="column LogoCreation">
+        <div class="content">
+        <img src="Content/DandelionLogo.png" alt="Car" style="width:100%">
+        </div>
+    </div>
+    <div class="column LogoCreation">
+        <div class="content">
+        <img src="Content/Logo.png" alt="Car" style="width:100%">
+        </div>
+    </div>
+    <div class="column LogoCreation">
+        <div class="content">
+        <img src="Content/EAVLogo.png" alt="Car" style="width:100%">
+        </div>
+    </div>
+    </div>
+    <div class="row">
+    <div class="column GraphicDesign">
+        <div class="content">
+        <img src="Content/Photo_Safari_Poster_e6.jpg" alt="People" style="width:100%">
+        </div>
+    </div>
+    <div class="column GraphicDesign">
+        <div class="content">
+        <img src="Content/Photoshop.png" alt="People" style="width:100%">
+        </div>
+    </div>
+    <div class="column GraphicDesign">
+        <div class="content">
+        <img src="Content/CircusInvitation_e5.png" alt="People" style="width:100%">
+        </div>
+    </div>
+    <!-- END GRID -->
+    </div>
+    <a href="https://dribbble.com/StephanieCadd" target="_blank"><button class="pbtn" style="margin-left: 42%;">View Portfolio Website</button></a>
+</div>
+    <!--End Portfolio-->
+
 
         <!--Projects-->
         <div class="Row" id="projects">
 
             <div class="Projects">
-                <h1>Projects</h1>
-                <p>I am also a web developer. I can create websites using the following languages: HTML, CSS and Javascript. 
+                <h1>Web Development</h1>
+                <p>I can create websites using the following languages: HTML, CSS and Javascript. 
                     You can view my coding projects on Github here:</p>
                 <a href="https://github.com/stephaniecadd/HTML-and-CSS-Projects" target="_blank" alt="github"><button>Github</button></a>
             </div>
@@ -134,9 +177,57 @@
         <!--End Projects-->
 
     <!--Animations-->
-    <script>
-        gsap.from(".Banner_Text", {duration: 3, x: 300, opacity: 0, scale: 0.5});
-    </script>
+            <script>
+                gsap.from(".Banner_Text", {duration: 3, x: 300, opacity: 0, scale: 0.5});
+
+                filterSelection("all") // Execute the function and show all columns
+        function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("column");
+        if (c == "all") c = "";
+        // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+        for (i = 0; i < x.length; i++) {
+            w3RemoveClass(x[i], "show");
+            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+        }
+        }
+
+        // Show filtered elements
+        function w3AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+            if (arr1.indexOf(arr2[i]) == -1) {
+            element.className += " " + arr2[i];
+            }
+        }
+        }
+
+        // Hide elements that are not selected
+        function w3RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+            while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);
+            }
+        }
+        element.className = arr1.join(" ");
+        }
+
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function(){
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+        });
+        }
+            </script>
 
     <!--Footer-->
         <footer>

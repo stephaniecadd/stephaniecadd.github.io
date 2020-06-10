@@ -19,6 +19,7 @@ html {
       background-size: cover;
       width: 100%;
       height: 100%;
+      background-color: rgba(255, 255, 255, 0.575);
       }
 
   /*fade effect for the page when the page is loaded*/
@@ -35,7 +36,7 @@ html {
       position: fixed; /*keeps the navbar at the top of the screen as we scroll*/
       top: 0; /*no space is displayed above the navbar*/
       width: 100%; /*entire width of the page*/
-      height: 5.1vh;
+      height: 8vh;
       z-index: 1;
       position: fixed;
       -webkit-animation: moveNav 2s; /* Safari 4.0 - 8.0 */
@@ -46,10 +47,10 @@ html {
   .Navbar a {
       display: inline-block; /*same line or row*/
       color: white; /*font color for navbar*/
-      padding: .75vw 1vw; /*padding around our text*/
+      padding: 1.5vw 1vw; /*padding around our text*/
       text-decoration: none; 
       font-family: 'Open Sans', sans-serif;
-      font-size: 1.5vh; /*font size for navbar*/
+      font-size: 2vh; /*font size for navbar*/
       text-align: center; 
       position: relative;
       -webkit-animation: movenavText 2.25s; /* Safari 4.0 - 8.0 */
@@ -99,6 +100,7 @@ html {
     right: 0; /*no space between the edge of the banner and the edge of the page*/
     top: 0;
     width: 100%;
+    height: auto;
     z-index: -1;
     position: relative;
   }
@@ -108,7 +110,7 @@ html {
       background: rgba(255, 255, 255, 0.1); /*semi-transparent background*/
       color: white; 
       width: 100%;
-      padding-top: .1vh; /*padding around the text*/
+      padding-top: 1vh; /*padding around the text*/
       padding-bottom: 1vh;
       position: absolute;
       margin-top: 0%;
@@ -155,34 +157,94 @@ html {
     background-color: rgba(255, 255, 255, 0.9);
   }
 
-  /*Gallery*/
-    #Gallery {
-      padding: 1.3%;
+  /*Portfolio Section*/
+    #Portfolio {
+      padding: 4vw;
       background-color: rgba(255, 255, 255, 0.9);
     }
+
+    * {
+      box-sizing: border-box;
+    }
     
-    .GalleryGrid {
+    */
+    .row {
+      margin: 0px 0px;
+      display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    }
+    
+    /* Add padding BETWEEN each column (if you want) */
+    .row,
+    .row > .column {
+      padding: 0px;
+    }
+    
+    /* Create three equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 33.33%;
+      display: none; /* Hide columns by default */
+    }
+    
+    /* Clear floats after rows */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Content */
+    .content {
+      padding: 1vw 1vw;
       display: flex;
       flex-wrap: wrap;
-      padding: 1.3%;
+      
+    }
+    .content image{
+      padding: 1vh;
+      vertical-align: middle;
+    }
+    
+    /* The "show" class is added to the filtered elements */
+    .show {
+      display: block;
+    }
+    
+    /* Style the buttons */
+    .pbtn {
+        width: 15vw;  
+        padding: 15px;
+        background-color: transparent;
+        color: #25b6b8;
+        border: 1px solid #25b6b8;
+        border-radius: .5vh;
+        font-size: 1.8vh;
+        font-family: 'Open Sans', sans-serif;
+        letter-spacing: .3vw; 
+        font-size: 1.8vh;
+        padding: .5vw .5vw;
+        cursor: pointer;
+        margin: 1vw;
+    }
+    
+    /* Add a grey background color on mouse-over */
+    .pbtn:hover {
+      color: white;
+      background-color: #25b6b8;
+      -webkit-transition-duration: 1s; 
+      transition-duration: 1s;
     }
 
-    /* Create three equal columns that sits next to each other */
-    .imgcolumn {
-      flex: 33.33%;
-      max-width: 33.33%;
-      padding: 1.6%;
-    }
-
-    .imgcolumn img {
+    .content img {
       margin-top: 8px;
       vertical-align: middle;
       width: 100%;
       transition: 1s;
-      padding: 3% 3%;
       filter: drop-shadow(8px 8px 10px rgba(128, 128, 128, 0.1));
     }
-    .imgcolumn img:hover {
+    .content img:hover {
       transform: scale(1.3);
     }
 
@@ -321,9 +383,9 @@ html {
   
   /*Button for contact form*/
   .open-button {
-    width: 15vw;
+    width: 20vw;
     margin-top: auto;  
-    padding: 15px;
+    padding: 20px;
     background-color: white;
     color: #25b6b8;
     border: 1px solid #25b6b8;
@@ -340,7 +402,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -10px;
+    margin-top: -25px;
     padding-bottom: 20px;
     background-color: rgba(255, 255, 255, 0.9)
   }
@@ -396,7 +458,7 @@ html {
   }
   
   /* Button styling */
-  button {
+  .btn {
     font-family: 'Open Sans', sans-serif;
     letter-spacing: .3vw; 
     font-size: 1.8vh;
@@ -430,7 +492,7 @@ html {
   }
   /*mobile responsive*/
   @media (max-width: 600px) {
-    .Navbar, .Home, .Column_1, .Column_2, .Column_3, .Row{
+    .Navbar, .Home, .Column_1, .Column_2, .Column_3, .Row, .row{
       width: 100%;
       height: auto;
     } }
@@ -483,7 +545,7 @@ html {
   
   /* Responsive layout - makes a one column-layout instead of three columns */
   @media screen and (max-width: 800px) {
-    .imgcolumn {
+    .content {
       flex:100%;
       max-width: 100%;
     }
@@ -491,7 +553,7 @@ html {
   
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
-    .imgcolumn {
+    .content {
       flex: 100%;
       max-width: 100%;
     }
