@@ -14,7 +14,7 @@ html {
       }
 
   .bodybackground {
-      background-image: url(../Content/Clouds.jpg);
+      background-image: ;
       background-position: center;
       background-size: cover;
       width: 100%;
@@ -136,31 +136,33 @@ html {
   .Column_1 {
       float: left;  
       width: 65%; /*one column takes up half the page width*/
-      padding: 1.3%; 
-      background-color:rgba(255, 255, 255, 0.8); 
+      padding-top: 1.5%;
+      padding-left: 14%;
+      background-color:rgba(255, 255, 255, 1); 
       height: 425px; 
   }
   
   .Column_2 {
       float: left;
       width: 35%;
-      padding: 1.3%;
+      padding-top: 1.5%;
+      padding-right: 10%;
       height: 425px; 
-      background-color: rgba(255, 255, 255, 0.8);
+      background-color: rgba(255, 255, 255, 1);
   }
 
   .Projects{
     float: left;
     width: 100%;
-    padding: 1.3%;
+    padding: 1.5% 14%;
     height: 275px; 
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 1);
   }
 
   /*Portfolio Section*/
     #Portfolio {
-      padding: 4vw;
-      background-color: rgba(255, 255, 255, 0.8);
+      padding: 1.5% 14%;
+      background-color: rgba(255, 255, 255, 1);
     }
 
     * {
@@ -191,8 +193,8 @@ html {
      /* Create three equal columns that floats next to each other */
      .column {
       float: left;
-      flex: 33.33%;
-      max-width: 33.33%;
+      flex: 50%;
+      max-width: 50%;
       display: none; /* Hide columns by default */
     }
     /* Content */
@@ -202,7 +204,7 @@ html {
       flex-wrap: wrap;
     }
     .content image{
-      padding: 1vh;
+      padding: 0vh;
       vertical-align: middle;
       width: 100%;
     }
@@ -278,7 +280,7 @@ html {
       font-family: 'Lato', sans-serif;
       font-weight: 500;
       text-align: left;
-      padding-left: 4vw;
+      padding-left: 0vw;
       font-size: 3vh;
       margin-top: 3vh; /*margin above the headings*/
       color: #25b6b8;
@@ -308,7 +310,7 @@ html {
       letter-spacing: 0.05vw; 
       line-height: 3vh;
       font-size: 1.8vh;
-      padding-left: 4vw;
+      padding-left: 0vw;
       padding-right: 4vw;
       color: rgb(104, 104, 104);
   }
@@ -510,7 +512,7 @@ html {
       } }
   /*hide contact button*/
   @media (max-width: 1024px) {
-      .open-button{
+      .formbutton{
         display: none;
       } }
 
@@ -539,7 +541,7 @@ html {
     /*banner*/
     @media (max-width: 600px) {
       #banner {
-        width: 100%;
+        height: auto;
         padding-bottom: 0vh;
         margin-left: 0vw;
       }
@@ -563,16 +565,16 @@ html {
   /*Github Button*/
   @media screen and (max-width: 800px) {
     .Row button {
-      margin-left: 10%;
+      margin-left: 0%;
       width: 75vw;
     }
   /*Buttons*/
     .pbtn {
       width: 75vw;
-      margin: 3vw 6vw;
+      margin: 3vw 0vw;
     }
     .pbtnbottom {
       width: 75vw;
-      margin-left: 10%;
+      margin-left: 0%;
     }
   }
