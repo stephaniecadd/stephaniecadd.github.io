@@ -213,9 +213,9 @@ html {
     }
     
     /* Style the buttons */
-    .pbtn {
+    .pbtn, .pbtnbottom {
         width: 15vw;  
-        padding: 15px;
+        padding: 10px;
         background-color: transparent;
         color: #25b6b8;
         border: 1px solid #25b6b8;
@@ -224,9 +224,11 @@ html {
         font-family: 'Open Sans', sans-serif;
         letter-spacing: .3vw; 
         font-size: 1.8vh;
-        padding: .5vw .5vw;
         cursor: pointer;
         margin: 1vw;
+    }
+    .pbtnbottom {
+      margin-left: 40%;
     }
     
     /* Add a grey background color on mouse-over */
@@ -251,15 +253,15 @@ html {
     /*button in gallery section*/
     .Row button {
       width: 10%;
-      margin-left: 42%;
+      margin-left: 40%;
       margin-top: 1%;
       margin-bottom: 3%;
       width: 15vw;  
-      padding: 15px;
+      padding: 10px;
       background-color: transparent;
       color: #25b6b8;
       border: 1px solid #25b6b8;
-      border-radius: 1vh;
+      border-radius: .5vh;
       cursor: pointer;
       font-size: 1.8vh;
     }
@@ -558,22 +560,19 @@ html {
       max-width: 100%;
     }
   }
+  /*Github Button*/
   @media screen and (max-width: 800px) {
     .Row button {
-      padding-right: 15vw;
-      padding-left: 7vw;
+      margin-left: 10%;
+      width: 75vw;
     }
+  /*Buttons*/
     .pbtn {
-      width: 25vw;
-      margin: 3vw 1vw;
+      width: 75vw;
+      margin: 3vw 6vw;
     }
-    .pbtn All {
-      display: none;
-    }
-  }
-  @media screen and (max-width: 800px) {
-    .Projects button {
-      padding-right: 15vw;
-      padding-left: 5vw;
+    .pbtnbottom {
+      width: 75vw;
+      margin-left: 10%;
     }
   }
