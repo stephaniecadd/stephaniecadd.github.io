@@ -133,28 +133,31 @@ html {
       box-sizing: border-box; /*creates a box with a border*/
   }
   
-  .Column_1 {
+  .Row {
+    padding: 1.5% 14%;
+  }
+  
+
+  .Column_1, .TopColumn_1 {
       float: left;  
-      width: 65%; /*one column takes up half the page width*/
-      padding-top: 1.5%;
-      padding-left: 14%;
+      width: 60%; /*one column takes up half the page width*/
       background-color:rgba(255, 255, 255, 1); 
       height: 425px; 
+  }
+  .TopColumn_1 {
+    margin-top: 2vh;
   }
   
   .Column_2 {
       float: left;
-      width: 35%;
-      padding-top: 1.5%;
-      padding-right: 10%;
+      width: 40%;
       height: 425px; 
       background-color: rgba(255, 255, 255, 1);
   }
 
-  .Projects{
+  .Projects {
     float: left;
     width: 100%;
-    padding: 1.5% 14%;
     height: 275px; 
     background-color: rgba(255, 255, 255, 1);
   }
@@ -190,7 +193,7 @@ html {
       display: table;
       clear: both;
     }
-     /* Create three equal columns that floats next to each other */
+     /* Create two equal columns that floats next to each other */
      .column {
       float: left;
       flex: 50%;
@@ -199,7 +202,7 @@ html {
     }
     /* Content */
     .content {
-      padding: 1vw 1vw;
+      padding: .5vw .5vw;
       display: flex;
       flex-wrap: wrap;
     }
@@ -303,6 +306,16 @@ html {
     margin-top: 3%; /*margin above the headings*/
     color: #25b6b8;
   }
+  h3 {
+    text-transform: capitalize;
+    font-family: 'Lato', sans-serif; 
+    font-weight: 500;
+    font-size: 2vh;
+    text-align: left;
+    padding-top: 2vh;
+    margin-top: 3%; /*margin above the headings*/
+    color: rgb(104, 104, 104);
+  }
   /* Paragraph elements */
   p {
       font-family: 'Open Sans', sans-serif;
@@ -348,6 +361,7 @@ html {
       width: auto;
       margin: auto auto auto auto;
       display: block;
+      border-radius: 1%;
   }
   
   /* Center align element hover effect */
@@ -408,7 +422,7 @@ html {
     justify-content: center;
     margin-top: -25px;
     padding-bottom: 20px;
-    background-color: rgba(255, 255, 255, 0.9)
+    background-color: rgba(255, 255, 255, 1)
   }
   
   /*The popup form*/
@@ -512,7 +526,7 @@ html {
       } }
   /*hide contact button*/
   @media (max-width: 1024px) {
-      .formbutton{
+      .formbutton, .TopColumn_1{
         display: none;
       } }
 
@@ -578,3 +592,42 @@ html {
       margin-left: 0%;
     }
   }
+/*Comparison Slider*/
+.img-comp-container {
+  position: relative;
+  width: 60%;
+  height: 350px; /*should be the same height as the images*/
+}
+
+.img-comp-img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  border-radius: 1%;
+}
+
+.img-comp-img img {
+  display: block;
+  vertical-align: middle;
+}
+
+.img-comp-slider {
+  position: absolute;
+  z-index: 9;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+  width: 1.5vw;
+  background-color: rgba(0, 206, 209, 0.75);
+  height: 1.5vw;
+  transform: rotate(45deg);
+}
+.bullet {
+  float: left;
+    width: 1vh;
+    height: 1vh;
+    margin-right: 1vw;
+    margin-top: 2.5vh;
+    background-color: #00CED1;
+    border-radius: 50%
+}

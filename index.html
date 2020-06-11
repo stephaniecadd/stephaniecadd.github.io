@@ -15,15 +15,6 @@
         
                 <script src="JS/JavaScript.js"></script>
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <!-- Fade in effect -->
-        <script>
-            document.body.className += ' fade-out';
-            $(function() {
-                $('body').removeClass('fade-out');
-            }
-            );
-
-        </script>
 
     <!--Navigation-->
         <div class="Navbar">
@@ -71,20 +62,32 @@
         <!--End Contact-->
 
         <!--Services-->
-        <div class="col1">
+        <div class="Row">
+        
+      <div class="TopColumn_1">
+        <div class="img-comp-container">
+            <div class="img-comp-img">
+              <img src="Content/Photoshop.png" width="450" height="350">
+            </div>
+            <div class="img-comp-img img-comp-overlay">
+              <img src="Content/comparison.jpg" width="450" height="350">
+            </div>
+            </div>
+            <p>Click and drag diamond to see before and after</p>
+          </div>
 
+          <div class="Column_2">
+            <h1>What I offer:</h1>
+            <div class="bullet"></div><h3>Website Design and Development</h3>
+            <div class="bullet"></div><h3>Photo Editing and Manipulation</h3>
+            <div class="bullet"></div><h3>Branding (Logo Creation, Brand Styles)</h3>
+            <div class="bullet"></div><h3>Custom Illustrations</h3>
         </div>
+    </div>
 
-        <div class="col2">
-            
-        </div>
-
-        <div class="col3">
-            
-        </div>
         <!--About-->
         <div class="Row" id="About">
-            
+
             <div class="Column_1">
                 <h1>About Me</h1>
                 <p>Hello! I'm Stephanie Cadd, a web designer/developer and graphic designer. I design and develop websites that represent you, illustrate logos
@@ -100,6 +103,7 @@
             <div class="Column_2">
                 <img class="Expand1" src="./Content/Contact2.jpg">
             </div>
+
         </div>
         <!--End About-->
 
@@ -127,7 +131,7 @@
     </div>
     <div class="column WebsiteDesign">
     <div class="content">
-        <img src="Content/MockupAssignment.jpg" style="width:100%">
+        <img src="Content/AssignmentMagazine.jpg" style="width:100%">
         </div>
     </div>
     </div>
@@ -156,7 +160,7 @@
     </div>
     <div class="column GraphicDesign">
         <div class="content">
-        <img src="Content/Photoshop.png" alt="People" style="width:100%">
+        <img src="Content/CircusInvitation_e5.png" alt="People" style="width:100%">
         </div>
     </div>
     </div>
@@ -182,53 +186,63 @@
             <script>
                 gsap.from(".Banner_Text", {duration: 3, x: 300, opacity: 0, scale: 0.5});
 
-                filterSelection("all") // Execute the function and show all columns
-        function filterSelection(c) {
-        var x, i;
-        x = document.getElementsByClassName("column");
-        if (c == "all") c = "";
-        // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
-        for (i = 0; i < x.length; i++) {
-            w3RemoveClass(x[i], "show");
-            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-        }
-        }
-
-        // Show filtered elements
-        function w3AddClass(element, name) {
-        var i, arr1, arr2;
-        arr1 = element.className.split(" ");
-        arr2 = name.split(" ");
-        for (i = 0; i < arr2.length; i++) {
-            if (arr1.indexOf(arr2[i]) == -1) {
-            element.className += " " + arr2[i];
+           //fade effect//
+            document.body.className += ' fade-out';
+            $(function() {
+                $('body').removeClass('fade-out');
             }
-        }
-        }
+            );
 
-        // Hide elements that are not selected
-        function w3RemoveClass(element, name) {
-        var i, arr1, arr2;
-        arr1 = element.className.split(" ");
-        arr2 = name.split(" ");
-        for (i = 0; i < arr2.length; i++) {
-            while (arr1.indexOf(arr2[i]) > -1) {
-            arr1.splice(arr1.indexOf(arr2[i]), 1);
+            //portfolio buttons//
+            filterSelection("all") // Execute the function and show all columns
+            function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("column");
+            if (c == "all") c = "";
+            // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+            for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
             }
-        }
-        element.className = arr1.join(" ");
-        }
+            }
 
-        // Add active class to the current button (highlight it)
-        var btnContainer = document.getElementById("myBtnContainer");
-        var btns = btnContainer.getElementsByClassName("btn");
-        for (var i = 0; i < btns.length; i++) {
-        btns[i].addEventListener("click", function(){
-            var current = document.getElementsByClassName("active");
-            current[0].className = current[0].className.replace(" active", "");
-            this.className += " active";
-        });
-        }
+            // Show filtered elements
+            function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {
+                element.className += " " + arr2[i];
+                }
+            }
+            }
+
+            // Hide elements that are not selected
+            function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+            }
+
+            // Add active class to the current button (highlight it)
+            var btnContainer = document.getElementById("myBtnContainer");
+            var btns = btnContainer.getElementsByClassName("btn");
+            for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function(){
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+            }
+
+            initComparisons();
             </script>
 
     <!--Footer-->
