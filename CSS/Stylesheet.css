@@ -626,7 +626,7 @@ html {
       overflow: hidden;
     }
     img {
-      object-fit: cover;
+      object-fit: contain;
       max-width: 100% !important;
       height: 100%;
     }
