@@ -613,6 +613,7 @@ html {
     .column {
       flex: 100%;
       max-width: 100%;
+      height: auto;
     }
   }
   
@@ -621,6 +622,7 @@ html {
     .column {
       flex: 100%;
       max-width: 100%;
+      height: auto;
     }
   }
   /*Github Button*/
