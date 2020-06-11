@@ -617,7 +617,8 @@ html {
     }
   }
   
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  /* Responsive layout - makes the one columns stack on top of each other instead of next to each other
+  Fixes image stretch on iphones */
   @media screen and (max-width: 800px) {
     .column, .content {
       flex: 100%;
