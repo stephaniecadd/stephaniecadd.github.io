@@ -385,7 +385,7 @@ html {
       font-size: 1.8vh;
   }
   a:hover {
-    color: #d16900; 
+    color: #c2728f; 
     text-decoration: underline;
   }
 
@@ -534,7 +534,7 @@ html {
   }
   .form-container .cancel:hover{
     color: white;
-    background-color: #d16900;
+    background-color: #c2728f;
     -webkit-transition-duration: 1s; 
     transition-duration: 1s;
   }	
