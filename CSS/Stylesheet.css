@@ -58,6 +58,7 @@ html {
       letter-spacing: .1vw;
   }
   
+  
   /*moving the nav bar in from above the top of the screen*/
   @keyframes moveNav {
     from {left: -100vw;}
