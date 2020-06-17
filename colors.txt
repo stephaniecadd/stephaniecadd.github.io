@@ -2,4 +2,5 @@ Light teal #E5FAFA
 Teal #00CED1
 Dark teal #25b6b8
 Pink #c2728f
+light pink: #f5e7ec
 Gray #686868

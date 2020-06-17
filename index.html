@@ -23,7 +23,6 @@
             <a href="#About">About Me</a>
             <a href="#Portfolio">Portfolio</a>
             <a onclick="openForm()">Contact</a>
-            <a href="https://www.linkedin.com/in/stephanie-cadd/" target="_blank"><i class="fab fa-linkedin-in" style="color: white;"></i></a>
         </div>
         <div class="btn cancel" onclick="closeForm()"></div>
     <!--End Navigation-->
@@ -33,7 +32,8 @@
        <br>
     <!--Banner Text-->
     <div class="Banner_Text">
-        <h1 class="bannerhead" style="color:white" >Web Design and Development | Graphic Design</h1><br>
+        <h1 class="bannerhead" style="color:white" >Stephanie Dawn Designs</h1>
+        <p class="bannerhead" style="color:white">Web Development and Design | Graphic Design</p>
         </div>
         
     <!--Banner-->
@@ -64,7 +64,23 @@
         <!--Services-->
         <div class="Row" id="Services">
         
-      <div class="TopColumn_1">
+            <div class="Column_1">
+                <h1>Work with me:</h1>
+                <h3><a href="https://beyondexpectations.typeform.com/to/vddg8f" target="_blank">Website Design and Development</a></h3>
+                <p>Do you need a website to build your brand or an updated website to attract more clients? I can help build you a functional website with an attractive design .</p>
+                <h3><a onclick="openForm()">Branding (Logo Creation, Brand Style Boards)</a></h3>
+                <p>Are you just getting started and don't know the direction to take your brand? Using color psychology and other design principles, we can come up with a brand perfect for you!</p>
+            </div>
+
+      <div class="Column_2">
+          <img class="Expand1" src="Content/StephanieDawnLogoTransparent.png" alt="">
+      </div>
+
+          
+    </div>
+
+    <div class="Row" id="Services">
+    <div class="TopColumn_1">
         <div class="img-comp-container">
             <div class="img-comp-img">
               <img src="Content/Photoshop.png" width="450" height="350">
@@ -77,13 +93,12 @@
           </div>
 
           <div class="Column_2">
-            <h1>What I offer:</h1>
-            <div class="bullet"></div><a href="https://beyondexpectations.typeform.com/to/vddg8f" target="_blank"><h3>Website Design and Development</a></h3>
-            <div class="bullet"></div><a onclick="openForm()"><h3>Photo Editing and Manipulation</a></h3>
-            <div class="bullet"></div><a onclick="openForm()"><h3>Branding (Logo Creation, Brand Style Boards)</a></h3>
-            <a onclick="openForm()">Let's start on your project!</a>
+            <h3><a onclick="openForm()">Photo Editing and Manipulation</a></h3>
+            <p>Using Adobe Photoshop and Adobe Illustrator, I make custom images. I can edit brightness, saturation, and contrast all the way to masking and layering multiple images together! </p>
+            <br><button class="btn" onclick="openForm()">Let's start on your project!</button>
         </div>
-    </div>
+
+          </div>
 
         <!--About-->
         <div class="Row" id="About">
@@ -106,7 +121,7 @@
 
         <!--Portfolio-->
         <div id="Portfolio">
-            <h2>Portfolio</h2>
+            <h1>Portfolio</h1>
     <div id="myBtnContainer">
     <button class="pbtn active" onclick="filterSelection('all')"> Show All</button>
     <button class="pbtn" onclick="filterSelection('WebsiteDesign')"> Website Design</button>
@@ -244,6 +259,7 @@
 
     <!--Footer-->
         <footer>
+            <a href="https://www.linkedin.com/in/stephanie-cadd/" target="_blank"><i class="fab fa-linkedin-in" style="color: white;"></i></a>
             <p>&copy; 2020 Stephanie Cadd</p>
         </footer>
 
