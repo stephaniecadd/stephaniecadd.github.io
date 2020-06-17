@@ -52,7 +52,15 @@
                 <input type="text" placeholder="Name" name="name" required>
                 <input type="text" placeholder="Phone Number" name="phone">	
                 <input type="text" placeholder="Email" name="email" required>
-                <input type="text" placeholder="Message" name="message">
+                <select name="interest">
+                    <option value="Interest">Interest</option>
+                    <option value="Web Design/Development">Web Design/Development</option>
+                    <option value="Logo Creation">Logo Creation</option>
+                    <option value="Branding">Branding</option>
+                    <option value="Photo Editing">Photo Editing</option>
+                    <option value="Other">Other</option>
+                </select>
+                <textarea placeholder="Message" name="message" style="height:10vh"></textarea>
 
         <button type="submit" class="btn">Submit</button>
         <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
