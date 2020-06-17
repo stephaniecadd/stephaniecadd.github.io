@@ -58,10 +58,6 @@ html {
       animation: movenavText 2.25s;
       letter-spacing: .1vw;
   }
-  .logo {
-    height: 10vh;
-    float: left;
-  }
   
   /*moving the nav bar in from above the top of the screen*/
   @keyframes moveNav {
@@ -561,6 +557,15 @@ html {
   footer>p {
     color: white;
   }
+  /*social icons*/
+  i {
+    float: right;
+    padding: 1%;
+    width: 4vh;
+  }
+  .fab{
+    font-size: 2.5vh !important; /*size whatever you like*/
+}
 
 
   /*mobile responsive*/
