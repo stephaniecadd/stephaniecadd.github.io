@@ -17,6 +17,7 @@
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <!--Navigation-->
+    <img id="whitelogo" src="Content/StephanieDawnLogoWhiteBkgd.png">
         <div class="Navbar">
             <a class="active" href="#Home">Home</a>
             <a href="#Services">Work with me</a>
@@ -30,22 +31,21 @@
     <!--Home-->
     <div id="Home"><br>
        <br>
-    <!--Banner Text-->
-    <div class="Banner_Text">
-        <h1 class="bannerhead" style="color:white" >Stephanie Dawn Designs</h1>
-        <p class="bannerhead" style="color:white">Web Development and Design | Graphic Design</p>
-        </div>
         
     <!--Banner-->
-        <img id='banner'src="Content/Mandala.png">
-
-        </div>
+        <img id='banner'src="Content/Mandalanologo.png">
+    
     <!--End Banner-->
 
         <!--Contact-->
-        <div class="formbutton">
+        
             <button onclick="openForm()" class="open-button"> Contact Me! </button>
+        
+        
         </div>
+        <!--End Contact-->
+
+        <!--form-->
         <div class="form-popup" id="myForm">
             <form action="https://formspree.io/xvobopkd" method="POST" class="form-container">
             <h2>Contact</h2>
@@ -67,9 +67,51 @@
         
             </form>
         </div>
-        <!--End Contact-->
+        <!--end form-->
 
         <!--Services-->
+        <div class="Row" id="Services">
+            
+                <div class="Servicecol">
+                    <img class="Serviceicon" src="Content/Brand.png">
+                    <h3>Branding</h3>
+                </div>
+                <div class="Servicecol">
+                <img class="Serviceicon" src="Content/PaintBrush.png">
+                <h3>Web Design</h3>
+                </div>
+                <div class="Servicecol">
+                <img class="Serviceicon" src="Content/WebDevelop.png">
+                <h3>Web Developement</h3>
+                </div>
+                <div class="Servicecol">
+                <img class="Serviceicon" src="Content/PhotoEdit.png">
+                <h3>Image Editing</h3>
+                </div>
+                
+        </div>
+        <!--End Services-->
+
+        <!--About-->
+        <div class="Row" id="About">
+
+            <div class="Column_1">
+                <h1>About Me</h1>
+                <p>Hello! I'm Stephanie Cadd, a web designer/developer and graphic designer. I design and develop websites, illustrate logos
+                    and create brands that represent you. <br><br> I am a graduate of <a href="https://www.learncodinganywhere" target="_blank">The Tech Academy's</a> 
+                    UI/UX Developer Boot Camp where I trained in the following web developement languages: HTML, CSS, and Javascript. I also graduated 
+                    Portland Community College's Digital Arts Program learning design principles, Adobe Photoshop and Adobe Illustator to create and edit images.
+                    <a href="Content/Resume.pdf" target="_blank">Click here to view my Resume.</a><br>
+            </div>
+
+            <div class="Column_2">
+                <img class="Expand1" src="./Content/Contact2.jpg">
+            </div>
+
+        </div>
+        <!--End About-->
+
+        <!--old Services
         <div class="Row" id="Services">
         
             <div class="Column_1">
@@ -106,26 +148,7 @@
             <br><button class="btn" onclick="openForm()">Let's start on your project!</button>
         </div>
 
-          </div>
-
-        <!--About-->
-        <div class="Row" id="About">
-
-            <div class="Column_1">
-                <h1>About Me</h1>
-                <p>Hello! I'm Stephanie Cadd, a web designer/developer and graphic designer. I design and develop websites, illustrate logos
-                    and create brands that represent you. <br><br> I am a graduate of <a href="https://www.learncodinganywhere" target="_blank">The Tech Academy's</a> 
-                    UI/UX Developer Boot Camp where I trained in the following web developement languages: HTML, CSS, and Javascript. I also graduated 
-                    Portland Community College's Digital Arts Program learning design principles, Adobe Photoshop and Adobe Illustator to create and edit images.
-                    <a href="Content/Resume.pdf" target="_blank">Click here to view my Resume.</a><br>
-            </div>
-
-            <div class="Column_2">
-                <img class="Expand1" src="./Content/Contact2.jpg">
-            </div>
-
-        </div>
-        <!--End About-->
+          </div>-->
 
         <!--Portfolio-->
         <div id="Portfolio">
@@ -170,32 +193,32 @@
     <div class="row">
         <div class="column LogoCreation">
             <div class="content">
-            <img src="Content/DandelionLogo.png" alt="Car" style="width:100%">
+            <img src="Content/UCLogoPortfolio.png" alt="Car" style="width:100%">
             </div>
         </div>
         <div class="column LogoCreation">
             <div class="content">
-            <img src="Content/EAVLogo.png" alt="Car" style="width:100%">
+            <img src="Content/EAVLogoPortfolio.png" alt="Car" style="width:100%">
             </div>
         </div>
         </div>
     <!-- END GRID -->
-    <a href="https://www.behance.net/stephaniecadd" target="_blank"><button class="pbtnbottom" style="">View Portfolio Website</button></a>
+    <a href="https://dribbble.com/StephanieCadd" target="_blank"><button class="pbtnbottom" style="">View Portfolio Website</button></a>
 </div>
     <!--End Portfolio-->
 
 
         <!--Projects-->
-        <div class="Row" id="projects">
+        <div class="Row" id="Projects">
 
-            <div class="Projects">
-                <h1>Web Development</h1>
-                <p>I can create websites using the following languages: HTML, CSS and Javascript. 
-                    You can view my coding projects on Github here:</p>
-                <a href="https://github.com/stephaniecadd/HTML-and-CSS-Projects" target="_blank" alt="github"><button>Github</button></a>
+            <div class="centerproject">
+                <img style="float: left" class="Serviceicon" src="Content/GitHub.png">
+                <a href="https://github.com/stephaniecadd/HTML-and-CSS-Projects" target="_blank" alt="github"><h2>View my coding projects on Github here</h2></a>
             </div>
         </div>
         <!--End Projects-->
+
+    
 
     <!--Animations-->
             <script>

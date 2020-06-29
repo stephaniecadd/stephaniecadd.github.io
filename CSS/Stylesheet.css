@@ -30,7 +30,8 @@ html {
   
   /*navigation*/
   .Navbar {
-      text-align: center;
+      text-align: right;
+      right: 0;
       overflow: hidden; /*overflowis not displayed*/
       background-color:#00CED1;
       position: fixed; /*keeps the navbar at the top of the screen as we scroll*/
@@ -81,23 +82,7 @@ html {
     text-decoration: none;
   }
   
-  /* Navbar home button */
-  .Navbar a.active { 
-    background-color: rgba(255, 255, 255, 0.3);  /*background color behind the Home button*/ 
-  }
-  
-  /*video to zoom out from a zoomed in position upon page load 
-  @keyframes zoominoutsinglefeatured {
-      0% {
-          transform: scale(1.5,1.5);
-      }
-      100% {
-          transform: scale(1,1);
-      }
-  }
-  */
-  
-  #banner{
+  #Home, #banner{
     right: 0; /*no space between the edge of the banner and the edge of the page*/
     top: 0;
     width: 100%;
@@ -105,18 +90,13 @@ html {
     z-index: -1;
     position: relative;
   }
-  
-  /* Text over the banner */ 
-  .Banner_Text { 
-      background: rgba(255, 255, 255, 0.1); /*semi-transparent background*/
-      color: white; 
-      width: 100%;
-      padding-top: 2.5vh; /*padding around the text*/
-      padding-bottom: 2.5vh;
-      position: absolute;
-      margin-top: 0%;
-      -webkit-animation: moveNav 5s; /* Safari 4.0 - 8.0 */
-      animation: movevideoText 5s;
+
+  #whitelogo {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0%;
+    width: 12%;
   }
   
   @-webkit-keyframes fade {
@@ -135,24 +115,49 @@ html {
   }
   
   .Row {
-    padding: 1.5% 14%;
+    padding: 2.5% 14%;
   }
-  
 
-  .Column_1, .TopColumn_1 {
+  /*Service section*/
+  #Services {
+    width: 100%;
+    height: 20vh;
+    background-color: #FBF6F8;
+    padding: 1% 15%;
+  }
+  .Serviceicon{
+    height: 5vw;
+  }
+  .Servicecol {
+    float: left;
+    padding: 0 5%;
+    margin-left: 2vw;
+    text-align: center;
+  }
+/*About me section*/
+    #About {
+      padding-top: 5%;
+      padding-bottom: 5%;
+    }
+
+  .Column_1 {
       float: left;  
       width: 60%; /*one column takes up half the page width*/
       background-color:rgba(255, 255, 255, 1); 
       height: 425px; 
   }
-  .TopColumn_1 {
-    margin-top: 2vh;
-  }
-  /*Comparison Slider in Top Column*/
+  .Column_2 {
+    float: left;
+    width: 40%;
+    height: 425px; 
+    background-color: rgba(255, 255, 255, 1);
+}
+
+  /*Comparison Slider in Top Column
     .img-comp-container {
       position: relative;
       width: 60%;
-      height: 350px; /*should be the same height as the images*/
+      height: 350px; /*should be the same height as the images
     }
 
     .img-comp-img {
@@ -172,51 +177,32 @@ html {
       position: absolute;
       z-index: 9;
       cursor: ew-resize;
-      /*set the appearance of the slider:*/
+      /*set the appearance of the slider:
       width: 1.5vw;
       background-color: rgba(0, 206, 209, 0.75);
       height: 1.5vw;
       transform: rotate(45deg);
     }
-    .bullet {
-      float: left;
-        width:1vh;
-        height: 1vh;
-        margin-right: 1vw;
-        margin-top: 4vh;
-        background-color: #00CED1;
-        border-radius: 50%;
-    }
-    .bullet01 {
-      float: left;
-      width:1vh;
-      height: 1vh;
-      margin-right: 1vw;
-      margin-top: 6vh;
-      background-color: #00CED1;
-      border-radius: 50%;
-    }
-  
-  .Column_2 {
-      float: left;
-      width: 40%;
-      height: 425px; 
-      background-color: rgba(255, 255, 255, 1);
-  }
-
-  .Projects {
-    float: left;
-    width: 100%;
-    height: 275px; 
-    background-color: rgba(255, 255, 255, 1);
-  }
+    */
 
   /*Portfolio Section*/
     #Portfolio {
-      padding: 1.5% 14%;
+      padding-right: 14%;
+      padding-left: 14%;
+      padding-bottom: 5%;
       background-color: rgba(255, 255, 255, 1);
     }
-
+  /*Project*/
+    #Projects {
+      float: left;
+      width: 100%;
+      height: 20vh; 
+      padding: 2% 15%;
+      background-color: #FBF6F8;
+      margin: auto;
+      text-align: center;
+    }
+    
     * {
       box-sizing: border-box;
     }
@@ -288,7 +274,7 @@ html {
     /* Add a grey background color on mouse-over */
     .pbtn:hover {
       color: #c2728f;
-      background-color: #f5e7ec
+      background-color: #f5e7ec;
       -webkit-transition-duration: 1s; 
       transition-duration: 1s;
     }
@@ -334,7 +320,6 @@ html {
       text-align: left;
       padding-left: 0vw;
       font-size: 3vh;
-      margin-top: 3vh; /*margin above the headings*/
       color: #25b6b8;
   }
 
@@ -350,7 +335,7 @@ html {
     font-family: 'Lato', sans-serif; 
     font-weight: 500;
     font-size: 2.5vh;
-    text-align: left;
+    text-align: center;
     padding-left: 1vw;
     margin-top: 3%; /*margin above the headings*/
     color: #c2728f;
@@ -362,8 +347,8 @@ html {
     font-size: 2vh;
     text-align: left;
     padding-top: 2vh;
-    margin-top: 3vh; /*margin above the headings*/
-    color: rgb(104, 104, 104);
+    margin-top: 0vh; /*margin above the headings*/
+    color: #00CED1;
   }
   /* Paragraph elements */
   p {
@@ -440,40 +425,26 @@ html {
   }
 
 
-  /*Contact form*/
-  
-  /* Makes contact form button slide in from right on page load 
-  @keyframes movePopup {
-    from {right: -40vw;}
-    to {bottom: 1.75vw;}
-  } */
-  
+
   /*Button for contact form*/
   .open-button {
     width: 20vw;
     margin-top: auto;  
     padding: 20px;
-    background-color: white;
-    color: #c2728f;
+    background-color: #00CED1;
+    color: white;
     border: 1px solid #f5e7ec;
     border-radius: 1vh;
     cursor: pointer;
     position: absolute;
-    -webkit-animation: movePopup 2s;
-    animation: movePopup 2s;
     font-size: 1.8vh;
+    z-index: 200;
+    text-align: center;
+    left:40%;
+    top: 85%;
   }
 
-  /*cointainer holding button*/
-  .formbutton{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: -25px;
-    padding-bottom: 20px;
-    background-color: rgba(255, 255, 255, 1)
-  }
-  
+
   /*The popup form*/
   .form-popup {
     z-index: 20;
@@ -536,7 +507,7 @@ html {
   }
   
   /* Hover effect for buttons */
-  button:hover, .form-container .btn:hover{
+  button:hover, .form-container .btn:hover, .open-button:hover{
     color: #c2728f;
     background-color: #f5e7ec;
     -webkit-transition-duration: 1s; 
@@ -551,7 +522,7 @@ html {
 
   /* Footer element */
   footer {
-      padding: .5%;
+      padding: 1%;
       background-color:#25b6b8;
   }
   footer>p {
@@ -569,7 +540,7 @@ html {
 
 
   /*mobile responsive*/
-  @media (max-width: 600px) {
+  @media (max-width: 800px) {
     .Navbar, .Home, .Column_1, .Column_2, .Column_3, .Row, .row{
       width: 100%;
       height: auto;
@@ -586,7 +557,7 @@ html {
       } }
   /*hide contact button*/
   @media (max-width: 1024px) {
-      .formbutton, .TopColumn_1{
+      .open-button, .TopColumn_1, h3, #Services{
         display: none;
       } }
 
