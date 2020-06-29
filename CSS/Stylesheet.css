@@ -422,7 +422,7 @@ html {
     cursor: pointer;
     position: absolute;
     font-size: 1.8vh;
-    z-index: 500;
+    z-index: 2;
     text-align: center;
     left:40%;
     top: 85%;
@@ -432,7 +432,7 @@ html {
     background-color: #f5e7ec;
     -webkit-transition-duration: 1s; 
     transition-duration: 1s;
-    z-index: 501;
+    z-index: 3;
   }
 
   /*The popup form*/
