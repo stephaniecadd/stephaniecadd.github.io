@@ -536,7 +536,7 @@ html {
     } }
   @media (max-width: 600px) {
     .Navbar>a {
-      font-size: 3vh;
+      font-size: 2vh;
     }}
   /*Image About*/
   @media (max-width: 600px) {
@@ -546,10 +546,25 @@ html {
       } }
   /*hide contact button*/
   @media (max-width: 1024px) {
-      .open-button, #Services{
+      .open-button{
         display: none;
       } }
-
+/*service*/
+@media (max-width: 800px) {
+  .Serviceicon {
+    height: 10vw;
+  } 
+.Servicecol{
+  width: 40%;
+  float: left;
+  padding: 1vh;
+}
+h3{
+  text-align: center;
+}
+#Services{
+  height: 30vh;
+}}
   /*form*/
   @media (max-width: 600px) {
     .form-container {
