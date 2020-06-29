@@ -279,6 +279,7 @@ html {
       transition-duration: 1s;
     }
 
+    /*portfolio images*/
     .content img {
       margin-top: 8px;
       vertical-align: middle;
@@ -323,13 +324,6 @@ html {
       color: #25b6b8;
   }
 
-  .portfoliotxt {
-    text-align: center;
-    margin-top: -60px;
-    padding-bottom: 20px;
-    z-index: 100;
-    color: white;
-  }
   h2 {
     text-transform: capitalize;
     font-family: 'Lato', sans-serif; 
@@ -362,15 +356,6 @@ html {
       color: rgb(104, 104, 104);
   }
   
-  /* Center align elements - this embraces all centered text */
-  center {
-      font-family: 'Open Sans', sans-serif;
-      text-align: center;
-      letter-spacing: .1vw;
-      font-size: 1vw;
-      padding-left: 5vw;
-      padding-right: 5vw;
-  }
 
   /* links */
   a {
@@ -385,10 +370,6 @@ html {
     text-decoration: underline;
   }
 
-  .bannerhead {
-    text-align: center;
-    padding-left: 0px;
-  }
 
   /*Images*/
 .Expand1 {
@@ -396,7 +377,7 @@ html {
       width: auto;
       margin: auto auto auto auto;
       display: block;
-      border-radius: 1%;
+      border-radius: 2%;
   }
   
   /* Center align element hover effect */
@@ -423,7 +404,6 @@ html {
       transform: scale(1.05);
       border-radius: 10%;
   }
-
 
 
   /*Button for contact form*/
@@ -507,7 +487,7 @@ html {
   }
   
   /* Hover effect for buttons */
-  button:hover, .form-container .btn:hover, .open-button:hover{
+  button:hover, .btn:hover, .open-button:hover{
     color: #c2728f;
     background-color: #f5e7ec;
     -webkit-transition-duration: 1s; 
@@ -538,16 +518,15 @@ html {
     font-size: 2.5vh !important; /*size whatever you like*/
 }
 
-
   /*mobile responsive*/
   @media (max-width: 800px) {
-    .Navbar, .Home, .Column_1, .Column_2, .Column_3, .Row, .row{
+    .Navbar, .Home, .Column_1, .Column_2, .Row, .row{
       width: 100%;
       height: auto;
     } }
   @media (max-width: 600px) {
     .Navbar>a {
-      font-size: 1.5vh;
+      font-size: 3vh;
     }}
   /*Image About*/
   @media (max-width: 600px) {
@@ -557,19 +536,9 @@ html {
       } }
   /*hide contact button*/
   @media (max-width: 1024px) {
-      .open-button, .TopColumn_1, h3, #Services{
+      .open-button, #Services{
         display: none;
       } }
-
-  /*banner text*/
-  @media (max-width: 600px) {
-    .portfoliotxt {
-      font-size:2vh;
-      margin-bottom: 0vh;
-      padding: 0;
-      color: #25b6b8;
-      display: none;
-    } }
 
   /*form*/
   @media (max-width: 600px) {
@@ -624,10 +593,6 @@ html {
   }
   /*Github Button*/
   @media screen and (max-width: 800px) {
-    .Row button {
-      margin-left: 0%;
-      width: 75vw;
-    }
   /*Buttons*/
     .pbtn {
       width: 75vw;
