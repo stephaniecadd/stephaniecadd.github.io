@@ -552,23 +552,18 @@ html {
 /*service*/
 @media (max-width: 800px) {
   .Serviceicon {
-    height: 8vw;
+    height: 10vw;
   } 
 .Servicecol{
-  width: 20%;
+  width: 40%;
   float: left;
-  margin: 2vw;
-  padding-left: 1vw;
-  padding-right: 1vw;
-  text-align: center;
+  padding: 1vh;
 }
 h3{
   text-align: center;
 }
 #Services{
-  height: 20vh;
-  padding-right: 1vw;
-  padding-left: 1vw;
+  height: 30vh;
 }}
   /*form*/
   @media (max-width: 600px) {
