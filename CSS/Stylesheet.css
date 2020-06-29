@@ -411,7 +411,7 @@ html {
 
 
   /*Button for contact form*/
-  .open-button {
+.open-button {
     width: 20vw;
     margin-top: auto;  
     padding: 20px;
@@ -422,12 +422,18 @@ html {
     cursor: pointer;
     position: absolute;
     font-size: 1.8vh;
-    z-index: 200;
+    z-index: 500;
     text-align: center;
     left:40%;
     top: 85%;
   }
-
+  .open-button:hover {
+    color: #c2728f;
+    background-color: #f5e7ec;
+    -webkit-transition-duration: 1s; 
+    transition-duration: 1s;
+    z-index: 501;
+  }
 
   /*The popup form*/
   .form-popup {
