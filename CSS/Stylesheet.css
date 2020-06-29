@@ -109,11 +109,6 @@ html {
     to {opacity: 1}
   }
   
-  /* Table - columns and rows*/
-  * { /* The asterisk is a universal selector that applies this effect to all elements on the page */
-      box-sizing: border-box; /*creates a box with a border*/
-  }
-  
   .Row {
     padding: 2.5% 14%;
   }
@@ -128,12 +123,23 @@ html {
   .Serviceicon{
     height: 5vw;
   }
+  .Servicecol:hover{
+    transition: transform 1s;
+    transform: scale(1.05);
+  }
   .Servicecol {
     float: left;
     padding: 0 5%;
     margin-left: 2vw;
     text-align: center;
   }
+  .Githubicon{
+    height: 10vh;
+    padding-left: 10vw;
+    padding-right: 5vw;
+    float: left;
+  }
+  
 /*About me section*/
     #About {
       padding-top: 5%;
@@ -200,7 +206,6 @@ html {
       padding: 2% 15%;
       background-color: #FBF6F8;
       margin: auto;
-      text-align: center;
     }
     
     * {
@@ -329,9 +334,7 @@ html {
     font-family: 'Lato', sans-serif; 
     font-weight: 500;
     font-size: 2.5vh;
-    text-align: center;
-    padding-left: 1vw;
-    margin-top: 3%; /*margin above the headings*/
+    padding-top: 3vh;
     color: #c2728f;
   }
   h3 {
@@ -344,6 +347,7 @@ html {
     margin-top: 0vh; /*margin above the headings*/
     color: #00CED1;
   }
+  
   /* Paragraph elements */
   p {
       font-family: 'Open Sans', sans-serif;
@@ -475,7 +479,7 @@ html {
     width: 250px;
   }
   
-  /* Button styling */
+  /* Button styling form */
   .btn{
     font-family: 'Open Sans', sans-serif;
     letter-spacing: .3vw; 
@@ -487,7 +491,7 @@ html {
   }
   
   /* Hover effect for buttons */
-  button:hover, .btn:hover, .open-button:hover{
+  button:hover, .btn:hover{
     color: #c2728f;
     background-color: #f5e7ec;
     -webkit-transition-duration: 1s; 
@@ -502,7 +506,7 @@ html {
 
   /* Footer element */
   footer {
-      padding: 1%;
+      padding: 2%;
       background-color:#25b6b8;
   }
   footer>p {
