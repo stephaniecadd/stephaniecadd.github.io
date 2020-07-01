@@ -530,13 +530,18 @@ html {
 
   /*mobile responsive*/
   @media (max-width: 800px) {
-    .Navbar, .Home, .Column_1, .Column_2, .Row, .row{
+     .Home, .Column_1, .Column_2, .Row, .row{
       width: 100%;
       height: auto;
     } }
   @media (max-width: 600px) {
     .Navbar>a {
       font-size: 2vh;
+      padding: 2vw;
+      float: right;
+    }
+    .Navbar{
+      width: 100%;
     }}
   /*Image About*/
   @media (max-width: 600px) {
@@ -550,20 +555,10 @@ html {
         display: none;
       } }
 /*service*/
-@media (max-width: 800px) {
-  .Serviceicon {
-    height: 10vw;
-  } 
-.Servicecol{
-  width: 40%;
-  float: left;
-  padding: 1vh;
-}
-h3{
-  text-align: center;
-}
+@media (max-width: 1024px) {
+  
 #Services{
-  height: 30vh;
+  display: none;
 }}
   /*form*/
   @media (max-width: 600px) {
@@ -585,10 +580,16 @@ h3{
   }}
   /*banner*/
   @media (max-width: 600px) {
-      #banner {
-        height: auto;
+      #Home > img {
+        height: 60vh;
+        background-size: cover;
+        background-color: #00CED1;
         padding-bottom: 0vh;
         margin-left: 0vw;
+      }
+      #whitelogo {
+        width:30vw;
+        height: 20vh;
       }
     }
   

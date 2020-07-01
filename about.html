@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <!--Head-->
+    <head>
+        <meta charset="UTF-8">
+        <title>Stephanie Cadd</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="./CSS/Stylesheet.css">
+        <script src="https://kit.fontawesome.com/cbcd822178.js" crossorigin="anonymous"></script>
+    </head>
+    <!-- Body -->
+    <body class="bodybackground">
+        
+                <script src="JS/JavaScript.js"></script>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!--Navigation-->
+    <img id="whitelogo" src="Content/StephanieDawnLogoWhiteBkgd.png">
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#About">About Me</a>
+            <a href="#Portfolio">Portfolio</a>
+            <a onclick="openForm()">Contact</a>
+        </div>
+        <div class="btn cancel" onclick="closeForm()"></div>
+    <!--End Navigation-->
+
+    <!--Home-->
+    <div id="Home"><br>
+       <br>
+    <!--Banner-->
+        <img id='banner'src="Content/Mandalanologo.png">
+    </div>
+    <!--End Banner-->
+
+        <!--Contact-->
+        <button onclick="openForm()" class="open-button"> Contact Me! </button>
+        <!--End Contact-->
+
+        <!--form-->
+        <div class="form-popup" id="myForm">
+            <form action="https://formspree.io/xvobopkd" method="POST" class="form-container">
+            <h2>Contact</h2>
+                <input type="text" placeholder="Name" name="name" required>
+                <input type="text" placeholder="Phone Number" name="phone">	
+                <input type="text" placeholder="Email" name="email" required>
+                <select name="interest">
+                    <option value="Interest">Interest</option>
+                    <option value="Web Design/Development">Web Design/Development</option>
+                    <option value="Logo Creation">Logo Creation</option>
+                    <option value="Branding">Branding</option>
+                    <option value="Photo Editing">Photo Editing</option>
+                    <option value="Other">Other</option>
+                </select>
+                <textarea placeholder="Message" name="message" style="height:10vh"></textarea>
+
+        <button type="submit" class="btn">Submit</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        
+            </form>
+        </div>
+        <!--end form-->
+
+    
+
+        <!--About-->
+        <div class="Row" id="About">
+            <div class="Column_1">
+                <h1>About Me</h1>
+                <p>Hello! I'm Stephanie Cadd, a web/graphic designer and artist. I design and develop websites, illustrate logos
+                    and create brands. <br><br> I am a graduate of <a href="https://www.learncodinganywhere" target="_blank">The Tech Academy's</a> 
+                    UI/UX Developer Boot Camp where I trained in the following web developement languages: HTML, CSS, and Javascript. I also graduated 
+                    Portland Community College's Digital Arts Program learning design principles, Adobe Photoshop and Adobe Illustator to create and edit images.<br><br>
+                    <a href="Content/Resume.pdf">My Resume</a></p>
+                    
+            </div>
+
+            <div class="Column_2">
+                <img class="Expand1" src="./Content/Contact2.jpg">
+            </div>
+        </div>
+        <!--End About-->
+
+       
+      
+    
+
+    <!--Animations-->
+            <script>
+                gsap.from("#whitelogo", {duration: 3, x: 300, opacity: 0, scale: 0.5});
+
+           //fade effect//
+            document.body.className += ' fade-out';
+            $(function() {
+                $('body').removeClass('fade-out');
+            }
+            );
+            </script>
+
+    <!--Footer-->
+        <footer>
+            <a href="https://www.instagram.com/stephaniecadd/" target="_blank"><i class="fab fa-instagram" style="color: white;"></i></a>
+            <a href="https://www.facebook.com/stephanie.cadd.31" target="_blank"><i class="fab fa-facebook-f" style="color: white;"></i></a>
+            <a href="https://www.linkedin.com/in/stephanie-cadd/" target="_blank"><i class="fab fa-linkedin-in" style="color: white;"></i></a>
+            <p>&copy; 2020 Stephanie Cadd</p>
+        </footer>
+
+    </body>
+</html>
