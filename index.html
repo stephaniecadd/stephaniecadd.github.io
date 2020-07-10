@@ -9,6 +9,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
         <link rel="stylesheet" type="text/css" href="./CSS/Stylesheet.css">
         <script src="https://kit.fontawesome.com/cbcd822178.js" crossorigin="anonymous"></script>
+        
     </head>
     <!-- Body -->
     <body class="bodybackground">
@@ -16,25 +17,48 @@
                 <script src="JS/JavaScript.js"></script>
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-    <!--Navigation-->
-    <img id="whitelogo" src="Content/StephanieDawnLogoWhiteBkgd.png">
-        <div class="Navbar">
-            <a class="active" href="#Home">Home</a>
-            <a href="#About">About Me</a>
-            <a href="#Portfolio">Portfolio</a>
-            <a onclick="openForm()">Contact</a>
-        </div>
-        <div class="btn cancel" onclick="closeForm()"></div>
-    <!--End Navigation-->
-
+    
     <!--Home-->
     <div id="Home"><br>
-       <br>
+        <br>
     <!--Banner-->
         <img id='banner'src="Content/Mandalanologo.png">
     </div>
     <!--End Banner-->
 
+    <!-- Top Navigation Menu -->
+    <div class="Navbar">
+
+    <nav role="navigation">
+        
+        <div id="menuToggle">
+          <!--
+          A fake / hidden checkbox is used as click reciever,
+          so you can use the :checked selector on it.
+          -->
+          <input type="checkbox" />
+          
+          <!--Some spans to act as a hamburger.-->
+          <span></span>
+          <span></span>
+          <span></span>
+    
+          <ul id="menu">
+            <a class="active" href="#Home"><li>Home</li></a>
+            <a href="#About"><li>About</li></a>
+            <a href="#Portfolio"><li>Portfolio</li></a>
+            <a onclick="openForm()"><li>Contact</li></a>
+          </ul>
+        </div>
+      </nav>
+    </div>
+      <!-- End Navigation Menu -->
+      <img id="whitelogo" src="Content/StephanieDawnLogoWhiteBkgd.png">
+
+   
+    <!--Contact-->
+    <h3 onclick="openForm()" class="open-button"> Contact Me! </h3>
+    <!--End Contact-->
 
         <!--form-->
         <div class="form-popup" id="myForm">
@@ -190,9 +214,7 @@
     </div>
 </div>
 <!--End About-->
-<!--Contact-->
-<button onclick="openForm()" class="open-button"> Contact Me! </button>
-<!--End Contact-->
+
 
         <!--Projects-->
         <div class="Row" id="Projects">
@@ -267,6 +289,16 @@
             }
 
             initComparisons();
+
+            /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
             </script>
 
     <!--Footer-->
