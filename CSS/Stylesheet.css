@@ -117,11 +117,11 @@ html {
   #Services {
     width: 100%;
     height: 20vh;
-    background-color: #FBF6F8;
+    background-color: ;
     padding: 1% 15%;
   }
   .Serviceicon{
-    height: 5vw;
+    height: 3vw;
   }
   .Servicecol:hover{
     transition: transform 1s;
@@ -129,6 +129,7 @@ html {
   }
   .Servicecol {
     float: left;
+    width: 30%;
     padding: 0 5%;
     margin-left: 2vw;
     text-align: center;
@@ -262,9 +263,9 @@ html {
         width: 15vw;  
         padding: 10px;
         background-color: transparent;
-        color: #c2728f;
-        border: 1px solid #f5e7ec;
-        border-radius: .5vh;
+        color: #00CED1;
+        border: 1px solid #E5FAFA;
+        border-radius: 3vh;
         font-size: 1.8vh;
         font-family: 'Open Sans', sans-serif;
         letter-spacing: .3vw; 
@@ -280,6 +281,7 @@ html {
     .pbtn:hover {
       color: #c2728f;
       background-color: #f5e7ec;
+      border: transparent;
       -webkit-transition-duration: 1s; 
       transition-duration: 1s;
     }
@@ -342,7 +344,7 @@ html {
     font-family: 'Lato', sans-serif; 
     font-weight: 500;
     font-size: 2vh;
-    text-align: left;
+    text-align: center;
     padding-top: 2vh;
     margin-top: 0vh; /*margin above the headings*/
     color: #00CED1;
@@ -417,8 +419,8 @@ html {
     padding: 20px;
     background-color: #00CED1;
     color: white;
-    border: 1px solid #f5e7ec;
-    border-radius: 1vh;
+    border: 1px solid #E5FAFA;
+    border-radius: 3vh;
     cursor: pointer;
     position: absolute;
     font-size: 1.8vh;
@@ -621,8 +623,10 @@ html {
   @media screen and (max-width: 800px) {
   /*Buttons*/
     .pbtn {
-      width: 75vw;
-      margin: 3vw 0vw;
+      width: 30vw;
+      height: 5vh;
+      font-size: 2vw;
+      margin: 1vw 2vw;
     }
     .pbtnbottom {
       width: 75vw;
