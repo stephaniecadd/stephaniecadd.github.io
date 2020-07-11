@@ -443,23 +443,25 @@ html {
   }
   
   /* Input fields */
-  .form-popup input[type=text], .form-container input[type=password], select, textarea {
+  .form-popup input[type=text], .form-container input[type=password], select{
     float: right;
     width: 100%;
     padding: .85vw;
-    margin: .6vw 0 .6vw 0;
+    margin: .6vw 0 1vw 0;
     background: white;
     border: .1vh solid white;
     border-radius: 1vh;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.8vh; 
   }
+ 
   /* Submit button */
   .form-popup .btn {
     background-color: white;
     color: #c2728f;
     border: .1vh solid #f5e7ec;
     border-radius: 1vh;
+    margin-top: 2vh;
     margin-bottom:1vh;
     margin-left: 65px;
     width: 250px;
