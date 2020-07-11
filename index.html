@@ -1,14 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <!--Head-->
     <head>
         <meta charset="UTF-8">
         <title>Stephanie Cadd</title>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
         <link rel="stylesheet" type="text/css" href="./CSS/Stylesheet.css">
         <script src="https://kit.fontawesome.com/cbcd822178.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <style>
+            a {color: rgb(104, 104, 104); 
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 2vh;
+            display: inline;}
+            a:hover {Color: #c2728f; 
+            text-decoration: underline;}
+          </style> 
+
         
     </head>
     <!-- Body -->
@@ -28,32 +39,34 @@
 
     <!-- Top Navigation Menu -->
     <div class="Navbar">
-
-    <nav role="navigation">
-        
-        <div id="menuToggle">
-          <!--
-          A fake / hidden checkbox is used as click reciever,
-          so you can use the :checked selector on it.
-          -->
-          <input type="checkbox" />
+        <nav class="navbar navbar-expand-lg navbar-light bg-teal">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
           
-          <!--Some spans to act as a hamburger.-->
-          <span></span>
-          <span></span>
-          <span></span>
-    
-          <ul id="menu">
-            <a class="active" href="#Home"><li>Home</li></a>
-            <a href="#About"><li>About</li></a>
-            <a href="#Portfolio"><li>Portfolio</li></a>
-            <a onclick="openForm()"><li>Contact</li></a>
-          </ul>
-        </div>
-      </nav>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                    <a class="nav-link text-white" href="#Home">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-white" href="#About">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#Portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" onclick="openForm()">Contact</a>
+                    </li>
+              </ul>
+            </div>
+          </nav>
     </div>
       <!-- End Navigation Menu -->
+
+      <!--Logo-->
       <img id="whitelogo" src="Content/StephanieDawnLogoWhiteBkgd.png">
+      <!--End Logo-->
 
    
     <!--Contact-->
@@ -83,45 +96,6 @@
             </form>
         </div>
         <!--end form-->
-
-        <!--old Services
-        <div class="Row" id="Services">
-        
-            <div class="Column_1">
-                <h1>Work with me:</h1>
-                <h3><a href="https://silkinmarketing.site/website-package/" target="_blank">Website Design and Development</a></h3>
-                <p>Do you need a website to build your brand or an updated website to attract more clients? I can help build you a functional website with an attractive design .</p>
-                <h3><a onclick="openForm()">Branding (Logo Creation, Brand Style Boards)</a></h3>
-                <p>Are you just getting started and don't know the direction to take your brand? Using color psychology and other design principles, we can come up with a brand perfect for you!</p>
-            </div>
-
-      <div class="Column_2">
-          <img class="Expand1" src="Content/StephanieDawnLogoTransparent.png" alt="">
-      </div>
-
-          
-    </div>
-
-    <div class="Row" id="Services">
-    <div class="TopColumn_1">
-        <div class="img-comp-container">
-            <div class="img-comp-img">
-              <img src="Content/Photoshop.png" width="450" height="350">
-            </div>
-            <div class="img-comp-img img-comp-overlay">
-              <img src="Content/comparison.jpg" width="450" height="350">
-            </div>
-            </div>
-            <p>Click and drag diamond to see before and after</p>
-          </div>
-
-          <div class="Column_2">
-            <h3><a onclick="openForm()">Photo Editing and Manipulation</a></h3>
-            <p>Using Adobe Photoshop and Adobe Illustrator, I make custom images. I can edit brightness, saturation, and contrast all the way to masking and layering multiple images together! </p>
-            <br><button class="btn" onclick="openForm()">Let's start on your project!</button>
-        </div>
-
-          </div>-->
 
         <!--Portfolio-->
         <div id="Portfolio">
@@ -202,10 +176,10 @@
     <div class="Column_1">
         <h1>About Me</h1>
         <p>Hello! I'm Stephanie Cadd, a web/graphic designer and artist. I design and develop websites, illustrate logos
-            and create brands. <br><br> I am a graduate of <a href="https://www.learncodinganywhere" target="_blank">The Tech Academy's</a> 
-            UI/UX Developer Boot Camp where I trained in the following web developement languages: HTML, CSS, and Javascript. I also graduated 
-            Portland Community College's Digital Arts Program learning design principles, Adobe Photoshop and Adobe Illustator to create and edit images.<br><br>
-            <a href="Content/Resume.pdf">My Resume</a></p>
+            and create brands. <br><br> I am a graduate of The Tech Academy's UI/UX Developer Boot Camp where I trained in 
+            the following web developement languages: HTML, CSS, and Javascript. I also graduated Portland Community College's 
+            Digital Arts Program learning design principles, Adobe Photoshop and Adobe Illustator to create and edit images.<br><br>
+            <a class="AboutLink" href="Content/Resume.pdf">My Resume</a></p>
             
     </div>
 
@@ -221,7 +195,7 @@
 
             <div class="centerproject">
                 <img class="Githubicon" src="Content/GitHub.png">
-                <a href="https://github.com/stephaniecadd/HTML-and-CSS-Projects" target="_blank" alt="github"><h2>View my coding projects on Github here</h2></a>
+                <a class="GitText" href="https://github.com/stephaniecadd/HTML-and-CSS-Projects" target="_blank" alt="github">View my coding projects on Github here</a>
             </div>
         </div>
         <!--End Projects-->
@@ -309,5 +283,9 @@ function myFunction() {
             <p>&copy; 2020 Stephanie Cadd</p>
         </footer>
 
+    <!--Bootstrap javascript-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </body>
 </html>
