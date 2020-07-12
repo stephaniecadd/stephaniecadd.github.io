@@ -521,7 +521,7 @@ html {
 
   /*mobile responsive*/
   @media (max-width: 800px) {
-     .Home, .Column_1, .Column_2, .Row, .row{
+      .Column_1, .Column_2, .Row, .row{
       width: 100%;
       height: auto;
     } }
@@ -582,6 +582,7 @@ html {
         width:30vw;
         height: 20vh;
       }
+      
     }
   
   /* Responsive layout - makes a one column-layout instead of three columns */
@@ -626,4 +627,7 @@ html {
   /*New Navbar*/
 .bg-teal {
   background-color: #00CED1;
+}
+.nav-teal {
+  color: #00CED1;
 }
