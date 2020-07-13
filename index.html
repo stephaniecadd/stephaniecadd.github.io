@@ -98,10 +98,12 @@
         <!--end form-->
 
         <!--Portfolio-->
+        
                     <div id="Portfolio" class="row ml-4 mr-4 p-2">
                         
                     <div class="col-sm-6 p-2" data-toggle="modal" data-target="#SYModal">
                       <img src="Content/SerenityYogaPortfolio.png" class="card-img-top" alt="...">
+                      <div class="overlay">Website Design</div>
                     </div>
                     <!--Modal-->
                     <div class="modal fade" id="SYModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -118,6 +120,7 @@
 
                     <div class="col-sm-6 p-2" data-toggle="modal" data-target="#STModal">
                         <img src="Content/SweetTreatsPortfolio.png" class="card-img-top" alt="...">
+                        <div class="overlay">Website Design</div>
                       </div>
                       <!--Modal-->
                       <div class="modal fade" id="STModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -134,6 +137,7 @@
 
                       <div class="col-sm-6 p-2" data-toggle="modal" data-target="#SSModal">
                         <img src="Content/SplitScreenPortfolio.png" class="card-img-top" alt="...">
+                        <div class="overlay">Website Design</div>
                       </div>
                       <!--Modal-->
                       <div class="modal fade" id="SSModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -150,6 +154,7 @@
 
                       <div class="col-sm-6 p-2" data-toggle="modal" data-target="#RLModal">
                         <img src="Content/RoseLifeCoachingPortfolio.png" class="card-img-top" alt="...">
+                        <div class="overlay">Website Design</div>
                       </div>
                       <!--Modal-->
                       <div class="modal fade" id="RLModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -166,6 +171,7 @@
 
                         <div class="col-sm-6 p-2" data-toggle="modal" data-target="#SDDModal">
                             <img src="Content/SDDBrandStylePortfolio.png" class="card-img-top" alt="...">
+                            <div class="overlay">Brand Style</div>
                           </div>
                           <!--Modal-->
                       <div class="modal fade" id="SDDModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -182,6 +188,7 @@
 
                           <div class="col-sm-6 p-2" data-toggle="modal" data-target="#DDModal">
                             <img src="Content/DDBrandStylePortfolio.png" class="card-img-top" alt="...">
+                            <div class="overlay">Brand Style</div>
                           </div>
                           <!--Modal-->
                       <div class="modal fade" id="DDModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -247,8 +254,10 @@
             }
             );
 
-            
-            initComparisons();
+
+            //Portfolio//
+            $('.filter-basic').mdbFilter();
+           
             </script>
 
     
