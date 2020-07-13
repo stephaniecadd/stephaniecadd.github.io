@@ -12,15 +12,8 @@ html {
       letter-spacing: .1vw;
       font-family: 'Open Sans', sans-serif;
       font-size: 1vw;
-      }
-
-  .bodybackground {
-      background-image: ;
-      background-position: center;
-      background-size: cover;
       width: 100%;
       height: 100%;
-      top:0;
       background-color: white;
       }
 
@@ -72,22 +65,12 @@ html {
   
   
   /* Navbar hover effect */
-  .Navbar a:hover {
-    background-color:; /* background color when you hover over the text*/
-    color: white; /*font color when you hover over the text*/ 
+  a:hover {
+    background-color:transparent; /* background color when you hover over the text*/
+    color: #E5FAFA; /*font color when you hover over the text*/ 
     background-color: rgba(255, 255, 255, 0.3);
     cursor: pointer;
     text-decoration: none;
-  }
-  
- #banner{
-    right: 0; /*no space between the edge of the banner and the edge of the page*/
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: auto;
-    z-index: -1;
-    position: relative;
   }
 
   #whitelogo {
@@ -113,33 +96,7 @@ html {
   background-color: white;
   }
 
-  /*Service section*/
-  #Services {
-    width: 100%;
-    height: 20vh;
-    background-color: ;
-    padding: 1% 15%;
-  }
-  .Serviceicon{
-    height: 3vw;
-  }
-  .Servicecol:hover{
-    transition: transform 1s;
-    transform: scale(1.05);
-  }
-  .Servicecol {
-    float: left;
-    width: 30%;
-    padding: 0 5%;
-    margin-left: 2vw;
-    text-align: center;
-  }
-  .Githubicon{
-    height: 10vh;
-    padding-left: 10vw;
-    padding-right: 5vw;
-    float: left;
-  }
+  
   
 /*About me section*/
     #About {
@@ -160,106 +117,20 @@ html {
     background-color: rgba(255, 255, 255, 1);
 }
 
-  /*Comparison Slider in Top Column
-    .img-comp-container {
-      position: relative;
-      width: 60%;
-      height: 350px; /*should be the same height as the images
-    }
 
-    .img-comp-img {
-      position: absolute;
-      width: auto;
-      height: auto;
-      overflow: hidden;
-      border-radius: 1%;
-    }
 
-    .img-comp-img img {
-      display: block;
-      vertical-align: middle;
-    }
-
-    .img-comp-slider {
-      position: absolute;
-      z-index: 9;
-      cursor: ew-resize;
-      /*set the appearance of the slider:
-      width: 1.5vw;
-      background-color: rgba(0, 206, 209, 0.75);
-      height: 1.5vw;
-      transform: rotate(45deg);
-    }
-    */
-
-  /*Portfolio Section*/
-    #Portfolio {
-      padding-right: 14%;
-      padding-left: 14%;
-      padding-bottom: 5%;
-      background-color: rgba(255, 255, 255, 1);
-    }
   /*Project*/
-    #Projects {
-      float: left;
-      width: 100%;
-      height: 20vh; 
-      padding: 2% 15%;
+    .jumbotron-fluid {
       background-color: #FBF6F8;
-      margin: auto;
+      margin: 0%;
     }
     
     * {
       box-sizing: border-box;
     }
     
-    *//*
-    .row {
-      margin: 0px 0px;
-      display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-    }
-    
-    /* Add padding BETWEEN each column (if you want) 
-    .row,
-    .row > .column {
-      padding: 0px;
-    }
-    
-    
-    /* Clear floats after rows 
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-     /* Create two equal columns that floats next to each other */
-     .column {
-      float: left;
-      flex: 50%;
-      max-width: 50%;
-      display: none; /* Hide columns by default */
-    }
-    /* Content */
-    .content {
-      padding: .5vw .5vw;
-      display: flex;
-      flex-wrap: wrap;
-    }
-    .content image{
-      padding: 0vh;
-      vertical-align: middle;
-      width: 100%;
-    }
-    
-    /* The "show" class is added to the filtered elements */
-    .show {
-      display: block;
-    }
-    
     /* Style the buttons */
-    .pbtn, .pbtnbottom {
+    .pbtnbottom {
         width: 15vw;  
         padding: 10px;
         background-color: transparent;
@@ -271,47 +142,17 @@ html {
         letter-spacing: .3vw; 
         font-size: 1.8vh;
         cursor: pointer;
-        margin: 1vw;
+        margin-left: 40vw;
     }
-    .pbtnbottom {
-      margin-left: 40%;
-    }
+  
     
     /* Add a grey background color on mouse-over */
-    .pbtn:hover {
+    .pbtnbottom:hover {
       color: #c2728f;
       background-color: #f5e7ec;
       border: transparent;
       -webkit-transition-duration: 1s; 
       transition-duration: 1s;
-    }
-
-    /*portfolio images*/
-    .content img {
-      margin-top: 8px;
-      vertical-align: middle;
-      width: 100%;
-      transition: 1s;
-      filter: drop-shadow(8px 8px 10px rgba(128, 128, 128, 0.1));
-    }
-    .content img:hover {
-      transform: scale(1.05);
-    }
-
-    /*button in gallery section*/
-    .Row button {
-      width: 10%;
-      margin-left: 40%;
-      margin-top: 1%;
-      margin-bottom: 3%;
-      width: 15vw;  
-      padding: 10px;
-      background-color: transparent;
-      color: #c2728f;
-      border: 1px solid #f5e7ec;
-      border-radius: .5vh;
-      cursor: pointer;
-      font-size: 1.8vh;
     }
 
   .Row:after { /* This inserts something after the content of selected elements */
@@ -373,12 +214,6 @@ html {
       margin: auto auto auto auto;
       display: block;
       border-radius: 2%;
-  }
-  
-  /* Center align element hover effect */
-  center:hover {
-      transition: transform 1s;
-      transform: scale(1.1);
   }
   
   /* Paragraph element hover effect */
@@ -527,7 +362,6 @@ html {
     .Navbar>a {
       font-size: 2vh;
       padding: 2vw;
-      float: right;
     }
     .Navbar{
       width: 100%;
@@ -538,17 +372,7 @@ html {
         width: 50%;
         height: auto;
       } }
-  /*hide contact button*/
-  @media (max-width: 1024px) {
-      .open-button{
-        display: ;
-      } }
-/*service*/
-@media (max-width: 1024px) {
-  
-#Services{
-  display: none;
-}}
+
   /*form*/
   @media (max-width: 600px) {
     .form-container {
@@ -569,13 +393,6 @@ html {
   }}
   /*banner*/
   @media (max-width: 600px) {
-      #Home > img {
-        height: 60vh;
-        background-size: cover;
-        background-color: #00CED1;
-        padding-bottom: 0vh;
-        margin-left: 0vw;
-      }
       #whitelogo {
         width:30vw;
         height: 20vh;
@@ -595,12 +412,6 @@ html {
   /* Responsive layout - makes the one columns stack on top of each other instead of next to each other
   Fixes image stretch on iphones */
   @media screen and (max-width: 800px) {
-    .column, .content {
-      flex: 100%;
-      max-width: 100% !important;
-      height: auto;
-      overflow: hidden;
-    }
     img {
       object-fit: contain;
       max-width: 100% !important;
@@ -610,15 +421,9 @@ html {
   /*Github Button*/
   @media screen and (max-width: 800px) {
   /*Buttons*/
-    .pbtn {
-      width: 30vw;
-      height: 5vh;
-      font-size: 2vw;
-      margin: 1vw 2vw;
-    }
     .pbtnbottom {
       width: 75vw;
-      margin-left: 0%;
+      margin-left: 5vw;
     }
   }
 
