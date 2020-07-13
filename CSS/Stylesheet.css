@@ -90,18 +90,43 @@ html {
     from {opacity: .4} 
     to {opacity: 1}
   }
-  
-  .Row {
-    padding: 2.5% 14%;
-  background-color: white;
-  }
 
+  /*banner section*/
+  /*New Navbar and background teal*/
+    
+  .bg-teal {
+      background-color: #00CED1;
+    }
+    
+  .nav-teal {
+      color: #00CED1;
+    }
+    
+    /*jumbotron header image*/
+  .banner {
+          background-image: url("Mandalanologo.png");
+          background-position: center;
+          background-size: cover;
+          width: 100%;
+          height: 95vh;
+    }
   
-  
+    /*underline*/
+    hr{
+      background-color: white;
+      width: 10vw;
+    }
+ 
+
 /*About me section*/
     #About {
       padding-top: 5%;
       padding-bottom: 5%;
+    }
+
+    .Row {
+      padding: 2.5% 14%;
+    background-color: white;
     }
 
   .Column_1 {
@@ -116,10 +141,20 @@ html {
     height: 425px; 
     background-color: rgba(255, 255, 255, 1);
 }
+/*portfolio*/
+.modalimage {
+  width: 70vw;
+}
+.mcontent {
+  width: 70vw;
+  height: 100%;
+  background-color: transparent;
+}
+.modal-dialog {
+  margin: 0vw;
+}
 
-
-
-  /*Project*/
+  /*Github Project*/
     .jumbotron-fluid {
       background-color: #FBF6F8;
       margin: 0%;
@@ -427,20 +462,6 @@ html {
     }
   }
 
-  /*New Navbar*/
-.bg-teal {
-  background-color: #00CED1;
-}
-.nav-teal {
-  color: #00CED1;
-}
 
-.banner {
-      background-image: url("Mandalanologo.png");
-      background-position: center;
-      background-size: cover;
-      width: 100%;
-      height: 95vh;
-}
 
 
