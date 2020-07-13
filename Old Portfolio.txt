@@ -1,0 +1,70 @@
+
+        <!--Portfolio-->
+        <div id="Portfolio">
+            <h1></h1>
+    <div id="myBtnContainer">
+    <button class="pbtn active" onclick="filterSelection('all')"> Show All</button>
+    <button class="pbtn" onclick="filterSelection('WebsiteDesign')"> Website Designs</button>
+    <button class="pbtn" onclick="filterSelection('LogoCreation')"> Logo Creation</button>
+    <button class="pbtn" onclick="filterSelection('GraphicDesign')"> Branding</button>
+    </div>
+
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+    <div class="column WebsiteDesign">
+        <div class="content">
+        <img src="Content/SweetTreats.png" alt="Mountains" style="width:100%">
+        </div>
+    </div>
+    <!--Temp Remove <div class="column WebsiteDesign">
+        <div class="content">
+        <img src="Content/AssignmentSplitScreen.jpg" alt="Lights" style="width:100%">
+        </div>
+    </div>-->
+    <div class="column WebsiteDesign">
+    <div class="content">
+        <img src="Content/SerenityYoga.png" style="width:100%">
+        </div>
+    </div>
+    </div>
+    <div class="row">
+        <div class="column WebsiteDesign">
+            <div class="content">
+            <img src="Content/RoseLifeCoaching.png" alt="Mountains" style="width:100%">
+            </div>
+        </div>
+        <!--Temp Remove <div class="column WebsiteDesign">
+            <div class="content">
+            <img src="Content/AssignmentSplitScreen.jpg" alt="Lights" style="width:100%">
+            </div>
+        </div>-->
+        <div class="column WebsiteDesign">
+        <div class="content">
+            <img src="Content/AssignmentSplitScreen.png" style="width:100%">
+            </div>
+        </div>
+        </div>
+    <div class="row">
+    <div class="column GraphicDesign">
+        <div class="content">
+        <img src="Content/S&SBrandStyleBoard.png" alt="People" style="width:100%">
+        </div>
+    </div>
+    <div class="column GraphicDesign">
+        <div class="content">
+        <img src="Content/BrandStyleBoard.png" alt="People" style="width:100%">
+        </div>
+    </div>
+    </div>
+    <div class="row">
+        <div class="column LogoCreation">
+            <div class="content">
+            <img src="Content/UCLogoPortfolio.png" alt="Car" style="width:100%">
+            </div>
+        </div>
+        <div class="column LogoCreation">
+            <div class="content">
+            <img src="Content/EAVLogoPortfolio.png" alt="Car" style="width:100%">
+            </div>
+        </div>
+        </div>
