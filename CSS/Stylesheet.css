@@ -342,7 +342,7 @@ html {
   h3 {
     text-transform: capitalize;
     font-family: 'Lato', sans-serif; 
-    font-weight: 500;
+    font-weight: 300;
     text-align: center;
     padding-top: 2vh;
     margin-top: 0vh; /*margin above the headings*/
@@ -541,7 +541,7 @@ html {
   /*hide contact button*/
   @media (max-width: 1024px) {
       .open-button{
-        display: none;
+        display: ;
       } }
 /*service*/
 @media (max-width: 1024px) {
