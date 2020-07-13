@@ -412,7 +412,7 @@ html {
   @media (max-width: 600px) {
     .form-container {
       max-width: 100vw;
-      height: 55vh;
+      height: 45vh;
     } }
   /*input fields*/
   @media (max-width: 600px) {
