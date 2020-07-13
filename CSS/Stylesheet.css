@@ -422,7 +422,7 @@ html {
   @media screen and (max-width: 800px) {
   /*Buttons*/
     .pbtnbottom {
-      width: 75vw;
+      width: 90vw;
       margin-left: 5vw;
     }
   }
