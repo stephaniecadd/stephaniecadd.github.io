@@ -128,7 +128,9 @@ html {
       padding: 2% 5%;
     background-color: white;
     }
-
+    .ServicesSec {
+      padding: 2% 10%;
+    }
   .Column_1 {
       float: left;  
       width: 60%; /*one column takes up half the page width*/
@@ -181,11 +183,11 @@ html {
       box-sizing: border-box;
     }
     
-    /* Style the buttons */
-    .pbtnbottom {
-        width: 15vw;  
-        padding: 2vw;
-        background-color: transparent;
+    /* Style the buttons Services*/
+    .servicesbtn{
+      width: 25vw;  
+        padding: 1vw;
+        background-color: #E5FAFA;
         color: #00CED1;
         border: 1px solid #E5FAFA;
         border-radius: 3vh;
@@ -194,17 +196,59 @@ html {
         letter-spacing: .3vw; 
         font-size: 1.8vh;
         cursor: pointer;
+      margin-top: 2vh;
+    }
+    .servicesbtn:hover{
+        width: 25vw;  
+        padding: 1vw;
+        background-color: #f5e7ec;
+        color: #c2728f;
+        border: 1px solid #f5e7ec;
+        border-radius: 3vh;
+        font-size: 1.8vh;
+        font-family: 'Open Sans', sans-serif;
+        letter-spacing: .3vw; 
+        font-size: 1.8vh;
+        cursor: pointer;
+        margin-left: 0vw;
+        text-decoration: none;
+        -webkit-transition-duration: 1s; 
+        transition-duration: 1s;
+    }
+    /* Style the buttons Portfolio*/
+    .pbtnbottom {
+        width: 25vw;  
+        padding: 1vw;
+        background-color: #E5FAFA;
+        color: #00CED1;
+        border: 1px solid #E5FAFA;
+        border-radius: 3vh;
+        font-size: 1.8vh;
+        font-family: 'Open Sans', sans-serif;
+        letter-spacing: .3vw; 
+        font-size: 1.8vh;
+        cursor: pointer;
+        margin-top: 2vh;
         margin-left: 40vw;
     }
   
     
     /* Add a grey background color on mouse-over */
     .pbtnbottom:hover {
-      color: #c2728f;
-      background-color: #f5e7ec;
-      border: transparent;
-      -webkit-transition-duration: 1s; 
-      transition-duration: 1s;
+        width: 25vw;  
+        padding: 1vw;
+        background-color: #f5e7ec;
+        color: #c2728f;
+        border: 1px solid #f5e7ec;
+        border-radius: 3vh;
+        font-size: 1.8vh;
+        font-family: 'Open Sans', sans-serif;
+        letter-spacing: .3vw; 
+        font-size: 1.8vh;
+        cursor: pointer;
+        text-decoration: none;
+        -webkit-transition-duration: 1s; 
+        transition-duration: 1s;
     }
 
   .Row:after { /* This inserts something after the content of selected elements */
@@ -413,7 +457,6 @@ html {
   @media (max-width: 600px) {
     .Navbar>a {
       font-size: 2vh;
-      padding: 2vw;
     }
     .Navbar{
       width: 100%;
@@ -452,15 +495,7 @@ html {
       
     }
   
-  /* Responsive layout - makes a one column-layout instead of three columns */
-  @media screen and (max-width: 800px) {
-    .column, .content {
-      flex: 100%;
-      max-width: 100%;
-      height: auto;
-    }
-  }
-  
+
   /* Responsive layout - makes the one columns stack on top of each other instead of next to each other
   Fixes image stretch on iphones */
   @media screen and (max-width: 800px) {
@@ -474,8 +509,11 @@ html {
   @media screen and (max-width: 800px) {
   /*Buttons*/
     .pbtnbottom {
-      width: 90vw;
+      width: 85vw;
       margin-left: 5vw;
+    }
+    .servicesbtn, .servicesbtn:hover {
+      width: 85vw;
     }
   }
   @media (max-width: 800px) {
