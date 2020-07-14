@@ -333,20 +333,19 @@ html {
 
 
   /*title for contact form*/
-.open-button {
+.bannertext {
     width: 100vw;
     margin-top: auto;  
     padding: 20px;
     color: white;
     border: none;
-    cursor: pointer;
     position: absolute;
     font-size: 3vh;
     z-index: 2;
     text-align: center;
     top: 85%;
   }
-  .open-button:hover {
+  .bannertext:hover {
     color: #f5e7ec;
     -webkit-transition-duration: 1s; 
     transition-duration: 1s;
