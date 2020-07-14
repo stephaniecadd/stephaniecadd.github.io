@@ -185,7 +185,7 @@ html {
     
     /* Style the buttons Services*/
     .servicesbtn{
-      width: 25vw;  
+      width: 20vw;  
         padding: 1vw;
         background-color: #E5FAFA;
         color: #00CED1;
@@ -199,7 +199,7 @@ html {
       margin-top: 2vh;
     }
     .servicesbtn:hover{
-        width: 25vw;  
+        width: 20vw;  
         padding: 1vw;
         background-color: #f5e7ec;
         color: #c2728f;
@@ -217,7 +217,7 @@ html {
     }
     /* Style the buttons Portfolio*/
     .pbtnbottom {
-        width: 25vw;  
+        width: 20vw;  
         padding: 1vw;
         background-color: #E5FAFA;
         color: #00CED1;
@@ -235,7 +235,7 @@ html {
     
     /* Add a grey background color on mouse-over */
     .pbtnbottom:hover {
-        width: 25vw;  
+        width: 20vw;  
         padding: 1vw;
         background-color: #f5e7ec;
         color: #c2728f;
