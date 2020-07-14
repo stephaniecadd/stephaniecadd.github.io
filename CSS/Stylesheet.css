@@ -478,7 +478,11 @@ html {
       margin-left: 5vw;
     }
   }
-
+  @media (max-width: 800px) {
+    .modalimage{
+    width: 90vw;
+    height: auto;
+  } }
 
 
 
