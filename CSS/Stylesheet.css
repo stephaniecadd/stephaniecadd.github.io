@@ -1,4 +1,20 @@
-#Services, #Portfolio, #About {
+    html {
+    scroll-behavior: smooth; /*page scrolling is smooth*/
+    
+    }
+  
+    /*body*/
+    body {
+      margin: 0%; /*site displays all the way on screen*/
+      letter-spacing: .1vw;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1vw;
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      }
+
+  #Services, #Portfolio, #About {
     padding: 2% 10%;
   }
   #ContactImg {
