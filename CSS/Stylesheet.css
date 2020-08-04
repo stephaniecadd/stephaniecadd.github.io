@@ -72,6 +72,15 @@ image:hover {
     border: .5vh transparent;
     color: white;
 }
+
 .Navbar {
     position: fixed;
+}
+a {
+    color: #00CED1;
+    font-weight: 600;
+}
+a:hover {
+    color: #25b6b8;
+    text-decoration: none;
 }
