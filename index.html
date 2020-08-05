@@ -13,11 +13,54 @@
         <link rel="stylesheet" href="CSS/Stylesheet.css" />
     </head>
     <body>
+
+        <style>
+        .uk-card {
+            padding: 5vh;
+            height: 50vh;
+        }
+        .btn {
+            width:10vw;
+        }
+        #About {
+            height: 60vh;
+        }
+        .logo {
+            width:10vw; 
+            height: 10vw;
+        }
+        @media only screen and (max-width: 800px) {
+            .uk-card {
+                height: 75vh;
+                padding: 5vh;
+            }
+            .btn {
+                width: 80vw;
+            }
+            #About {
+                height: 90vh;
+            }
+            .marblecontact {
+                display: none;
+            }
+            .formcontact {
+                height: 100vh;
+                padding:  20vh 5vw;
+            }
+            .logo {
+                width:40vw; 
+                height: 40vw;
+            }
+        }
+        
+
+        </style>
+
         <!--Banner-->
             <div class="banner uk-height-viewport uk-background-cover uk-light uk-flex uk-position-relative"  style="background-image: url('Content/Mandalanologo.png');">   
                 <h3 class="uk-align-center uk-animation-scale-up" style="margin-top: 85vh;">Graphic and Web Design<hr></h3>     
                 </div>
-                <img class="logo uk-align-right uk-animation-scale-up" src="Content/StephanieDawnLogoWhiteBkgd.png" style="width:10vw; height: 10vw;">
+                <img class="logo uk-align-right uk-animation-scale-up" src="Content/StephanieDawnLogoWhiteBkgd.png">
             <div class="uk-position-top">
 
         <!--NavBar-->
@@ -41,7 +84,7 @@
         <!--Services-->
         <div id="Services" class="uk-margin uk-child-width-1-2@m " uk-grid>
             <div>
-                <div class="uk-card uk-card-hover uk-card-default" style="height:50vh; padding:5vh;">
+                <div class="uk-card uk-card-hover uk-card-default">
                     <div class="uk-card-media-top">
                         <img class="uk-align-center" src="Content/WebDevelop.png" style="height: 7vh" alt="">
                     </div>
@@ -54,7 +97,7 @@
                 </div>
             </div>
             <div>
-                <div class="uk-card uk-card-hover uk-card-default" style="height:50vh; padding:5vh;">
+                <div class="uk-card uk-card-hover uk-card-default">
                     <div class="uk-card-media-top">
                         <img class="uk-align-center" src="Content/PhotoEdit.png" style="height: 7vh" alt="">
                     </div>
@@ -73,8 +116,8 @@
             <div class="uk-modal-dialog">
                 <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
                 <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
-                    <div class="uk-background-cover" style="background-image: url('Content/marble.jpg');" uk-height-viewport></div>
-                    <div class="uk-padding-large">
+                    <div class="uk-background-cover marblecontact" style="background-image: url('Content/marble.jpg');" uk-height-viewport></div>
+                    <div class="uk-padding-large formcontact">
                         <form action="https://formspree.io/xvobopkd" method="POST">
                             <fieldset class="uk-fieldset">
                                 <legend class="uk-legend">Contact</legend>
@@ -169,7 +212,7 @@
             </div>
           </div>
         </div>
-        <a href="https://dribbble.com/StephanieCadd" class="btn uk-button uk-button-default uk-align-center" target="_blank" style="width:10vw;">
+        <a href="https://dribbble.com/StephanieCadd" class="btn uk-button uk-button-default uk-align-center" target="_blank">
         View All
       </a>
     </div>
@@ -179,7 +222,7 @@
         <div id="About" class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
             <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
                 <img id="ContactImg" src="Content/Contact2.jpg" alt="" uk-cover>
-                <canvas width="600" height="400"></canvas>
+                <canvas width="400" height="200"></canvas>
             </div>
             <div>
                 <div class="uk-card-body">

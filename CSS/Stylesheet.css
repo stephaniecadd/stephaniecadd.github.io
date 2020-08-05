@@ -1,26 +1,32 @@
-    html {
+html {
     scroll-behavior: smooth; /*page scrolling is smooth*/
     
-    }
+}
   
-    /*body*/
-    body {
-      margin: 0%; /*site displays all the way on screen*/
-      letter-spacing: .1vw;
-      font-family: 'Open Sans', sans-serif;
-      font-size: 1vw;
-      width: 100%;
-      height: 100%;
-      background-color: white;
-      }
+/*body*/
+body {
+    margin: 0%; /*site displays all the way on screen*/
+    letter-spacing: .1vw;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1vw;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
 
-  #Services, #Portfolio, #About {
-    padding: 2% 10%;
-  }
-  #ContactImg {
+#Services, #Portfolio, #About {
+    padding: 4% 10%;
+}
+
+#Portfolio {
+background-color: #E5FAFA;
+}
+
+#ContactImg {
     padding: 10%;
-  }
-  h1 {
+}
+
+h1 {
     text-transform: capitalize;
     font-family: 'Lato', sans-serif;
     font-weight: 500;
@@ -38,13 +44,13 @@ h2, .GitText  {
   padding-top: 3vh;
   color: #c2728f;
 }
+
 h3 {
   text-transform: capitalize;
   font-family: 'Lato', sans-serif; 
   font-weight: 300;
   padding-top: 2vh;
   margin-top: 0vh; /*margin above the headings*/
-  
 }
 
 /* Paragraph elements */
@@ -100,4 +106,9 @@ a:hover {
     color: #25b6b8;
     text-decoration: none;
 }
-/*edit for source control*/
+.cardmedia {
+    height:50vh; padding:5vh;
+}
+::placeholder, option, .uk-select {
+    font-size: 1.5vh;
+}
