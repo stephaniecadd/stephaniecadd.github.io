@@ -106,9 +106,13 @@ a:hover {
     color: #25b6b8;
     text-decoration: none;
 }
-.cardmedia {
-    height:50vh; padding:5vh;
+.socials {
+    color: white;
 }
+.socials:hover {
+    color: #E5FAFA;
+}
+/*sizing for text in form*/
 ::placeholder, option, .uk-select {
     font-size: 1.5vh;
 }
