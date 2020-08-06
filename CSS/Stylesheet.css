@@ -83,17 +83,6 @@ image:hover {
 .banner {
     position: relative;
 }
-.btn{
-    background-color: #00CED1;
-    border: .5vh transparent;
-    color: white;
-    border-radius: 2vw;
-}
-.btn:hover{
-    background-color: #25b6b8;
-    border: .5vh transparent;
-    color: white;
-}
 
 .Navbar {
     position: fixed;
@@ -115,4 +104,91 @@ a:hover {
 /*sizing for text in form*/
 ::placeholder, option, .uk-select {
     font-size: 1.5vh;
+}
+
+
+/*
+.btn{
+    background-color: #00CED1;
+    border: .5vh transparent;
+    color: white;
+    border-radius: 2vw;
+}
+.btn:hover{
+    background-color: #25b6b8;
+    border: .5vh transparent;
+    color: white;
+}*/
+
+div[class*=box] {
+	height: 33.33%;
+	width: 100%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.btn {
+	line-height: 50px;
+	height: 50px;
+	text-align: center;
+	width: 250px;
+    cursor: pointer;
+    font-size: 1.5vh;
+    
+}
+
+/* 
+========================
+      BUTTON ONE
+========================
+*/
+.btn-one {
+	color: #25b6b8;
+	transition: all 0.3s;
+    position: relative;
+}
+.btn-one span {
+	transition: all 0.3s;
+}
+.btn-one::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0;
+	transition: all 0.3s;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #25b6b8;
+	border-bottom-color: #25b6b8;
+	transform: scale(0.1, 1);
+}
+.btn-one:hover span {
+	letter-spacing: 2px;
+}
+.btn-one:hover::before {
+	opacity: 1;	
+	transform: scale(1, 1);	
+}
+.btn-one::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	transition: all 0.3s;
+	background-color: #00ced125;
+}
+.btn-one:hover::after {
+	opacity: 0;	
+	transform: scale(0.1, 1);
 }
