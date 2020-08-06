@@ -106,27 +106,13 @@ a:hover {
     font-size: 1.5vh;
 }
 
-
-/*
-.btn{
-    background-color: #00CED1;
-    border: .5vh transparent;
-    color: white;
-    border-radius: 2vw;
-}
-.btn:hover{
-    background-color: #25b6b8;
-    border: .5vh transparent;
-    color: white;
-}*/
-
-div[class*=box] {
-	height: 33.33%;
+/*button*/
+.box {
+    height: 33.33%;
 	width: 100%; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
+    display: flex;
+    justify-content: center;
+    align-items: center;  
 }
 
 .btn {
@@ -137,14 +123,8 @@ div[class*=box] {
 	width: 10vw;
     cursor: pointer;
     font-size: 1.5vh;
-    
 }
 
-/* 
-========================
-      BUTTON ONE
-========================
-*/
 .btn-one {
 	color: #25b6b8;
 	transition: all 0.3s;
