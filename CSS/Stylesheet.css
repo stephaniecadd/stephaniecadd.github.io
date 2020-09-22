@@ -63,6 +63,13 @@ p {
     padding-right: 0vw;
     color: rgb(104, 104, 104);
 }
+a {
+  color: #c2728f;
+}
+a:hover {
+  color: #c2728f;
+  text-decoration: none;
+}
 .uk-modal-dialog {
   border-radius: 1vw;
 }
