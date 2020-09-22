@@ -66,6 +66,9 @@ p {
 .uk-modal-dialog {
   border-radius: 1vw;
 }
+.uk-input, .uk-textarea, .uk-select {
+  font-size: 3vw;
+}
 .btn {
     height: 5vh;
 	text-align: center;
