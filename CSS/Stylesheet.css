@@ -65,9 +65,12 @@ p {
 }
 a {
   color: #c2728f;
+  font-size: 1.8vh;
+
 }
 a:hover {
   color: #e489aa;
+  font-size: 1.8vh;
   text-decoration: none;
 }
 .uk-modal-dialog {
