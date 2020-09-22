@@ -68,7 +68,7 @@ a {
   font-size: 1.8vh;
 
 }
-a:hover {
+a:hover, .uk-nav-default>li>a:hover  {
   color: #e489aa;
   font-size: 1.8vh;
   text-decoration: none;
