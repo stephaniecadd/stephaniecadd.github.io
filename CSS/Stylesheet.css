@@ -73,6 +73,9 @@ a:hover {
   font-size: 1.8vh;
   text-decoration: none;
 }
+a:visited {
+  color: #e489aa;
+}
 .uk-modal-dialog {
   border-radius: 1vw;
 }
@@ -90,6 +93,11 @@ a:hover {
 }
 .btn:hover {
   background-color: #e489aa;
+  padding: 0vh 3vw;
+}
+.btn:visited {
+  background-color: #e489aa;
+  padding: 0vh 3vw;
 }
 hr {
   border-top: 1px solid #e489aa;
