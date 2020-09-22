@@ -74,6 +74,8 @@ p {
     font-size: 1.5vh;
     border-radius: 1vw;
     background-color: #c2728f;
+    border: 1px transparent;
+    color: white;
 }
 .btn:hover {
   background-color: #e489aa;
