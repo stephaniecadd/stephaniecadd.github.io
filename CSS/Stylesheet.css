@@ -28,7 +28,7 @@ h2 {
   text-transform: capitalize;
   font-family: 'Lato', sans-serif; 
   font-weight: 500;
-  font-size: 2.5vh;
+  font-size: 2vh;
   padding: 1vh 0;
   color: #c2728f;
 }
@@ -67,7 +67,7 @@ a {
   color: #c2728f;
 }
 a:hover {
-  color: #c2728f;
+  color: #e489aa;
   text-decoration: none;
 }
 .uk-modal-dialog {
