@@ -93,11 +93,25 @@ a:visited {
 }
 .btn:hover {
   background-color: #e489aa;
-  padding: 0vh 3vw;
+  height: 5vh;
+	text-align: center;
+	padding: 0vh 3vw;
+    cursor: pointer;
+    font-size: 1.5vh;
+    border-radius: 1vw;
+    border: 1px transparent;
+    color: white;
 }
 .btn:visited {
   background-color: #e489aa;
-  padding: 0vh 3vw;
+  height: 5vh;
+	text-align: center;
+	padding: 0vh 3vw;
+    cursor: pointer;
+    font-size: 1.5vh;
+    border-radius: 1vw;
+    border: 1px transparent;
+    color: white;
 }
 hr {
   border-top: 1px solid #e489aa;
