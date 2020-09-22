@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="shortcut icon" href="Content/StephanieDawnFavicon.jpg" />
+        <meta charset="utf-8">
+        <title>Stephanie Dawn Designs</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--UIKIT-->
+        <link rel="stylesheet" href="CSS/uikit.min.css" />
+        <script src="JS/uikit.min.js"></script>
+        <script src="JS/uikit-icons.min.js"></script>
+        <!--GS.js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+        <!--My JS-->
+        <script src="JS/JavaScript.js"></script>
+        <!--CSS-->
+        <link rel="stylesheet" href="CSS/Stylesheet.css" />
+    </head>
+    <body>
+        <style>
+            .mainsection {
+                width: 70vw;
+            }
+            .uk-card {
+                height: 30vh;
+            } 
+            #MobileNav {
+                display: none;
+            }
+            .uk-offcanvas-bar {
+                background-color: #25b6b8;
+            }
+        
+            @media only screen and (max-width: 600px) {
+                #DesktopNav {
+                    display: none;
+                }
+                #MobileNav {
+                    display: contents;
+                }
+                .socials {
+                    text-align: center;
+                }
+                }
+        </style>
+        
+                <div class="uk-section">
+        
+                    <!--Mobile Navebar-->
+                    <nav id="MobileNav" class="uk-navbar uk-navbar-container uk-margin">
+        
+                        <div class="uk-navbar-left">
+                            <a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-nav-primary"></a>
+                            <img class="uk-float-right" style="height: 20vh;" src="Content/StephanieDawnLogoTransparent.png">
+        
+                        </div>
+        
+                    </nav>
+        
+                    <div id="offcanvas-nav-primary" uk-offcanvas="overlay: true">
+                        <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+                    
+                            <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                                <li><a href="index.html">Home</a></li>
+                                <li class="uk-active"><a href="about.html">About Me</a></li>
+                                <li><a href="services.html">What I do</a></li>
+                                <li><a href="#contact" uk-toggle>Contact</a></li>
+                                
+                            </ul>
+                    
+                        </div>
+                    </div>
+        
+        
+                    <!--Desktop Navbar-->
+                    <div id="DesktopNav" class="uk-container uk-container-small" style="float:left; ">
+            
+                        <div class="uk-text-center" uk-grid></div>
+                        <div>
+                            <img src="Content/StephanieDawnLogoTransparent.png" style="width: 15vw;">
+                            <ul class="uk-nav uk-nav-default" style="padding:6vh 6vh;">
+                                <li class="uk-margin-top"><a href="index.html">Home</a></li>
+                                <li class="uk-active uk-margin-top"><a href="about.html">About Me</a></li>
+                                <li class="uk-margin-top"><a href="services.html">What I do</a></li>
+                                <li class="uk-margin-top"><a href="#contact" uk-toggle>Contact</a></li>
+                            </ul>
+                        </div>
+                
+                    </div>
+    <!--Contact Form-->
+    <div id="contact" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body">
+            <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+
+            <form action="https://formspree.io/xvobopkd" method="POST">
+                <fieldset class="uk-fieldset">
+            
+                    <legend class="uk-legend">Let's chat!</legend>
+            
+                    <div class="uk-margin">
+                        <input class="uk-input" type="text" placeholder="What's Your Name?">
+                    </div>
+
+                    <div class="uk-margin">
+                        <input class="uk-input" type="text" placeholder="What's Your Email">
+                    </div>
+            
+                    <div class="uk-margin">
+                        <select class="uk-select">
+                            <option>What do you need help with?</option>
+                            <option>Web Design/Development</option>
+                            <option>Logo Creation</option>
+                            <option>Brand Style</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+            
+                    <div class="uk-margin">
+                        <textarea class="uk-textarea" rows="5" placeholder="I'd love to hear more about your project..."></textarea>
+                    </div>
+                </fieldset>
+            </form>
+            <p class="uk-text-right">
+                <button class="btn uk-button uk-button-primary" type="submit">Submit</button>
+            </p>
+        </div>
+    </div>
+    <!--End Contact Form-->
+
+            <!--About-->
+            <div class="mainsection uk-container" style="float:left;" uk-grid uk-scrollspy="cls: uk-animation-fade; target: .fadea; delay: 500; repeat: true">
+                <div class="uk-grid-small uk-child-width-expand@s uk-text-center uk-margin-xlarge-top" uk-grid>
+                    <div class="fadea uk-width-1-3@l" >
+                        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                        <lottie-player class="uk-align-center" src="https://assets4.lottiefiles.com/packages/lf20_Kuqd0B/Flower.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+                    </div>
+                    <div class="fadea uk-width-2-3@l" >
+                        <h3>Nice to meet you!</h3>
+                        <h2 class="uk-text-left">Hi, I'm Stephanie</h2>
+                        <p>
+                            I am a website/graphic designer and developer.<br><br>
+                            
+                            With years of education that trained me in digital arts and UI, UX, I design beautiful and funtional sites. 
+                            My favorite part about doing what I do, is that I get to help other people follow their dreams and be successful!
+                        </p><br>
+                        <a href="Content/Resume20.07.14.pdf" target="_blank" class="btn uk-button uk-button-primary uk-float-left">Resume</a>
+                    </div>
+                    
+                </div>
+                </div>
+                </div>
+                
+        
+
+               <!--Footer-->
+               <div class="uk-section">
+                <div class="uk-container">
+                    <div class="uk-grid-match uk-child-width-1-4@m" uk-grid>
+                        <div>
+                        <p class="socials">
+                            <a class="" style="color: grey" href="https://www.instagram.com/stephaniecadd/" target="_blank"><span uk-icon="instagram"></span></a>
+                            <a class="" style="color: grey" href="https://www.facebook.com/stephanie.cadd.31/" target="_blank"><span uk-icon="facebook"></span></a>
+                            <a class="" style="color: grey" href="https://github.com/stephaniecadd" target="_blank"><span uk-icon="github"></span></a>
+                            <a class="" style="color: grey" href="https://www.linkedin.com/in/stephanie-cadd/" target="_blank"><span uk-icon="linkedin"></span></a>
+                        </p>
+                    </div>
+                        <div>
+                            <p style="text-align: center">&copy; 2020 Stephanie Dawn Designs</p>
+                        </div>
+                        <div>
+                            <p style="text-align: center">Portland, OR</p>
+                        </div>
+                        <div>
+                            <p style="text-align: center">stephaniecadd94@gmail.com</p>
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </div>
+
+                
+        
+
+        <script>
+        </script>
+        
+    </body>
+</html>

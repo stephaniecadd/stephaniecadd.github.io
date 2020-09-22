@@ -14,18 +14,6 @@ body {
     background-color: white;
 }
 
-#Services, #Portfolio, #About {
-    padding: 2% 10%;
-}
-
-#Portfolio {
-    background-color: #E5FAFA;
-}
-
-#ContactImg {
-    padding: 10%;
-}
-
 h1 {
     text-transform: capitalize;
     font-family: 'Lato', sans-serif;
@@ -33,24 +21,35 @@ h1 {
     text-align: left;
     padding-left: 0vw;
     font-size: 3vh;
-    color: #25b6b8;
+    color: black;
 }
 
-h2, .GitText  {
+h2 {
   text-transform: capitalize;
   font-family: 'Lato', sans-serif; 
   font-weight: 500;
   font-size: 2.5vh;
-  padding-top: 3vh;
+  padding: 1vh 0;
   color: #c2728f;
 }
 
 h3 {
   text-transform: capitalize;
+  font-size: 2vh;
   font-family: 'Lato', sans-serif; 
-  font-weight: 300;
-  padding-top: 2vh;
+  font-weight: 500;
   margin-top: 0vh; /*margin above the headings*/
+  text-align: left;
+  color: grey;
+}
+h4 {
+  text-transform: capitalize;
+  font-size: 2vh;
+  line-height: 1vh;
+  font-family: 'Lato', sans-serif; 
+  font-weight: 500;
+  text-align: left;
+  color: grey;
 }
 
 /* Paragraph elements */
@@ -64,113 +63,25 @@ p {
     padding-right: 0vw;
     color: rgb(104, 104, 104);
 }
-
-
-.footercolor {
-    background-color: #25b6b8;
+.uk-modal-dialog {
+  border-radius: 1vw;
 }
-.footer>p {
-    color: white;
-}
-image:hover {
-    filter: drop-shadow(10 px 10px 10px 10px black);
-}
-.logo {
-    position: absolute;
-    z-index: 150;
-    top: 0;
-    right:0;
-}
-.banner {
-    position: relative;
-}
-
-.Navbar {
-    position: fixed;
-}
-a {
-    color: #00CED1;
-    font-weight: 600;
-}
-a:hover {
-    color: #25b6b8;
-    text-decoration: none;
-}
-.socials {
-    color: white;
-}
-.socials:hover {
-    color: #E5FAFA;
-}
-/*sizing for text in form*/
-::placeholder, option, .uk-select {
-    font-size: 1.5vh;
-}
-
-/*button*/
-.box {
-    height: 33.33%;
-	width: 100%; 
-    display: flex;
-    justify-content: center;
-    align-items: center;  
-}
-
 .btn {
-	line-height: 3vh;
     height: 5vh;
-    padding-top: 2vh;
 	text-align: center;
-	width: 10vw;
+	padding: 0vh 3vw;
     cursor: pointer;
     font-size: 1.5vh;
+    border-radius: 1vw;
+    background-color: #c2728f;
 }
-
-.btn-one {
-	color: #25b6b8;
-	transition: all 0.3s;
-    position: relative;
+.btn:hover {
+  background-color: #e489aa;
 }
-.btn-one span {
-	transition: all 0.3s;
+hr {
+  border-top: 1px solid #e489aa;
+  width: 4vw;
 }
-.btn-one::before {
-	content: '';
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 1;
-	opacity: 0;
-	transition: all 0.3s;
-	border-top-width: 1px;
-	border-bottom-width: 1px;
-	border-top-style: solid;
-	border-bottom-style: solid;
-	border-top-color: #25b6b8;
-	border-bottom-color: #25b6b8;
-	transform: scale(0.1, 1);
-}
-.btn-one:hover span {
-	letter-spacing: .1vh;
-}
-.btn-one:hover::before {
-	opacity: 1;	
-	transform: scale(1, 1);	
-}
-.btn-one::after {
-	content: '';
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 1;
-	transition: all 0.3s;
-	background-color: #00ced125;
-}
-.btn-one:hover::after {
-	opacity: 0;	
-	transform: scale(0.1, 1);
+::selection {
+  background: #e489aa;
 }

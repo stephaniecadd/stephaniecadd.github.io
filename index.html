@@ -17,284 +17,471 @@
         <link rel="stylesheet" href="CSS/Stylesheet.css" />
     </head>
     <body>
-        <!--Mobile Responsiveness-->
-        <style>
-        /*Services Card*/
-        .uk-card {
-            padding: 5vh;
-            height: 50vh;
+
+<style>
+    .mainsection {
+        width: 70vw;
+    }
+    .uk-card {
+        height: 30vh;
+    } 
+    #MobileNav {
+        display: none;
+    }
+    .uk-offcanvas-bar {
+        background-color: #25b6b8;
+    }
+    .uk-inline-clip {
+        cursor: pointer;
+    }
+    @media only screen and (max-width: 600px) {
+        #DesktopNav {
+            display: none;
         }
-        #About {
-            height: 60vh;
+        #MobileNav {
+            display: contents;
         }
-        .logo {
-            width:10vw; 
-            height: 10vw;
+        .socials {
+            text-align: center;
         }
-        /*mobile responsiveness*/
-        @media only screen and (max-width: 800px) {
-            .uk-card {
-                height: 55vh;
-                padding: 5vh;
-            }
-            .uk-card-body {
-                padding: 0;
-            }
-            .btn {
-                width: 80vw;
-            }
-            #About {
-                height: 90vh;
-            }
-            .marblecontact {
-                display: none;
-            }
-            .formcontact {
-                height: 100vh;
-                padding:  20vh 5vw;
-            }
-            .logo {
-                width:40vw; 
-                height: 40vw;
-            }
         }
-        </style>
+</style>
 
-        <!--Banner-->
-            <div class="banner uk-height-viewport uk-background-cover uk-light uk-flex uk-position-relative"  style="background-image: url('Content/Mandalanologo.png');">   
-                <h3 class="bannertext uk-align-center uk-animation-scale-up" style="margin-top: 85vh;">Graphic and Web Design<hr></h3>   
+        <div class="uk-section">
+
+            <!--Mobile Navebar-->
+            <nav id="MobileNav" class="uk-navbar uk-navbar-container uk-margin">
+
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-nav-primary"></a>
+                    <img class="uk-float-right" style="height: 20vh;" src="Content/StephanieDawnLogoTransparent.png">
+
                 </div>
-                <img class="logo uk-align-right uk-animation-scale-up" src="Content/StephanieDawnLogoWhiteBkgd.png">
-            <div class="uk-position-top">
 
-        <!--NavBar-->
-        <nav class="navbar uk-navbar uk-navbar-container uk-margin uk-navbar-transparent"">
-            <div class="uk-navbar-left"> 
-                <a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-nav-primary" style="Color: white;"></a>
-            </div>
-        </nav>
-        </div>
-        <div id="offcanvas-nav-primary" uk-offcanvas="overlay: true">
-            <div class="uk-offcanvas-bar uk-flex uk-flex-column" style="background-color: #25b6b8;">
-                <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
-                    <li class="uk-active"><a href="#">Home</a></li>
-                    <li class="uk-parent">
-                        <a href="#About">About</a>
-                        <a href="#Portfolio">Portfolio</a>
-                        <a href="#modal-full" uk-toggle>Contact</a>
-            </div>
-        </div>
+            </nav>
 
-        <!--Services-->
-        <div id="Services" class="uk-margin uk-child-width-1-2@m " uk-grid>
-            <div>
-                <div class="uk-card uk-card-hover uk-card-default">
-                    <div class="uk-card-media-top">
-                        <img class="iconservices uk-align-center" src="Content/WebDevelop.png" style="height: 7vh" alt="">
-                    </div>
-                    <div class="uk-card-body">
-                        <h3 class="uk-card-title">Web Design and Development</h3>
-                        <p>I create custom website designs and convert the designs to live websites using HTML, CSS and Javascript.
-                            I work alongide marketing expert, <a href="https://www.sarahnicolenadler.com/tech-automation/">Sarah Nadler</a> to create functional and beautiful websites!
-                            <a href="#modal-full" uk-toggle>Contact me today!</a></p>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="uk-card uk-card-hover uk-card-default">
-                    <div class="uk-card-media-top">
-                        <img class="iconservices uk-align-center" src="Content/PhotoEdit.png" style="height: 7vh" alt="">
-                    </div>
-                    <div class="uk-card-body">
-                        <h3 class="uk-card-title">Graphic Design</h3>
-                        <p>Using Adobe Photoshop, Illustator, and Adobe XD I edit and illustrate images for brands. I create logos and branding for companies.
-                            Check out my work below:</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="box" style="margin-bottom: 6vh;">
-            <a href="#modal-full" uk-toggle>
-                <div class="btn btn-one">
-                <span>Contact Me</span>
-                </div>
-            </a>  
-            </div>
-
-        <!--Contact-->
-        <div id="modal-full" class="uk-modal-full" uk-modal>
-            <div class="uk-modal-dialog">
-                <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
-                <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
-                    <div class="uk-background-cover marblecontact" style="background-image: url('Content/marble.jpg');" uk-height-viewport></div>
-                    <div class="uk-padding-large formcontact">
-                        <form action="https://formspree.io/xvobopkd" method="POST">
-                            <fieldset class="uk-fieldset">
-                                <legend class="uk-legend">Contact</legend>
-                                <div class="uk-margin">
-                                    <input name="name" class="uk-input" type="text" placeholder="Name">
-                                </div>
-                                <div class="uk-margin">
-                                    <input name="email" class="uk-input" type="text" placeholder="Email">
-                                </div>
-                                <div class="uk-margin">
-                                    <select name="interested in" class="uk-select">
-                                        <option>Interested in</option>
-                                        <option>Web Design/Development</option>
-                                        <option>Branding</option>
-                                        <option>Logo Creation</option>
-                                        <option>Other</option>
-                                    </select>
-                                </div>
-                                <div class="uk-margin">
-                                    <textarea name="message" class="uk-textarea" rows="5" placeholder="Message"></textarea>
-                                </div>
-                                <button type="submit" class="uk-button uk-button-default">Submit</button>
-                            </fieldset>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!--Portfolio-->
-        <div id="Portfolio">
-            <h1>Portfolio</h1>
-        
-        <div class="uk-child-width-1-3@m" uk-grid uk-lightbox="animation: slide">
+            <div id="offcanvas-nav-primary" uk-offcanvas="overlay: true">
+                <div class="uk-offcanvas-bar uk-flex uk-flex-column">
             
-            <div class="uk-transition-toggle uk-light">
-                <a class="uk-inline" href="Content/RoseLifeCoachingPortfolio.png" data-caption="Rose Life Coaching Web Design">
-                    <img src="Content/RoseLifeCoachingPortfolio.png" alt="">
-                    <div class="uk-position-center uk-transition-fade" style="background-color:rgba(255, 255, 255, 0.25)">
-                      <span style="color:#25b6b8;" class="uk-transition-fade" uk-icon="icon: plus-circle; ratio: 2"></span>
-                  </div>
-                </a>
-            </div>
-            <div>
-              <div class="uk-transition-toggle uk-light">
-                <a class="uk-inline" href="Content/SerenityYogaPortfolio.png" data-caption="Serenity Yoga Web Design">
-                    <img src="Content/SerenityYogaPortfolio.png" alt="">
-                    <div class="uk-position-center uk-transition-fade" style="background-color:rgba(255, 255, 255, 0.25)">
-                      <span style="color:#25b6b8;" class="uk-transition-fade" uk-icon="icon: plus-circle; ratio: 2"></span>
-                  </div>
-                </a>
-            </div>
-          </div>
-            <div>
-              <div class="uk-transition-toggle uk-light">
-                <a class="uk-inline" href="Content/SplitScreenPortfolio.png" data-caption="Love Roasters Web Design">
-                    <img src="Content/SplitScreenPortfolio.png" alt="">
-                    <div class="uk-position-center uk-transition-fade" style="background-color:rgba(255, 255, 255, 0.25)">
-                      <span style="color:#25b6b8;" class="uk-transition-fade" uk-icon="icon: plus-circle; ratio: 2"></span>
-                  </div>
-                </a>
-            </div>
-          </div>
-            <div>
-              <div class="uk-transition-toggle uk-light">
-                <a class="uk-inline" href="Content/SweetTreatsPortfolio.png" data-caption="Sweet Treats Web Design">
-                    <img src="Content/SweetTreatsPortfolio.png" alt="">
-                    <div class="uk-position-center uk-transition-fade" style="background-color:rgba(255, 255, 255, 0.25)">
-                      <span style="color:#25b6b8;" class="uk-transition-fade" uk-icon="icon: plus-circle; ratio: 2"></span>
-                  </div>
-                </a>
-            </div>
-          </div>
-            <div>
-              <div class="uk-transition-toggle uk-light">
-                <a class="uk-inline" href="Content/SDDBrandStylePortfolio.png" data-caption="My Brand Style Board">
-                    <img src="Content/SDDBrandStylePortfolio.png" alt="">
-                    <div class="uk-position-center uk-transition-fade" style="background-color:rgba(255, 255, 255, 0.25)">
-                      <span style="color:#25b6b8;" class="uk-transition-fade" uk-icon="icon: plus-circle; ratio: 2"></span>
-                  </div>
-                </a>
-            </div>
-          </div>
-            <div>
-              <div class="uk-transition-toggle uk-light">
-                <a class="uk-inline" href="Content/DDBrandStylePortfolio.png" data-caption="Dandelion Daycare's Brand Style Board">
-                    <img src="Content/DDBrandStylePortfolio.png" alt="">
-                    <div class="uk-position-center uk-transition-fade" style="background-color:rgba(255, 255, 255, 0.25);">
-                      <span style="color:#25b6b8;" class="uk-transition-fade" uk-icon="icon: plus-circle; ratio: 2"></span>
-                  </div>
-                </a>
-            </div>
-          </div>
-          <div class="uk-transition-toggle uk-light">
-            <a class="uk-inline" href="Content/EAVLogoPortfolio.png" data-caption="Rose Life Coaching Web Design">
-                <img src="Content/EAVLogoPortfolio.png" alt="">
-                <div class="uk-position-center uk-transition-fade" style="background-color:rgba(255, 255, 255, 0.25)">
-                  <span style="color:#25b6b8;" class="uk-transition-fade" uk-icon="icon: plus-circle; ratio: 2"></span>
-              </div>
-            </a>
-        </div><div class="uk-transition-toggle uk-light">
-            <a class="uk-inline" href="Content/UCLogoPortfolio.png" data-caption="Rose Life Coaching Web Design">
-                <img src="Content/UCLogoPortfolio.png" alt="">
-                <div class="uk-position-center uk-transition-fade" style="background-color:rgba(255, 255, 255, 0.25)">
-                  <span style="color:#25b6b8;" class="uk-transition-fade" uk-icon="icon: plus-circle; ratio: 2"></span>
-              </div>
-            </a>
-        </div><div class="uk-transition-toggle uk-light">
-            <a class="uk-inline" href="Content/BBHLogoPortfolio.png" data-caption="Rose Life Coaching Web Design">
-                <img src="Content/BBHLogoPortfolio.png" alt="">
-                <div class="uk-position-center uk-transition-fade" style="background-color:rgba(255, 255, 255, 0.25)">
-                  <span style="color:#25b6b8;" class="uk-transition-fade" uk-icon="icon: plus-circle; ratio: 2"></span>
-              </div>
-            </a>
-        </div>
-        </div>
-
-
-      <div class="box" style="margin-top: 6vh;">
-        <a href="https://dribbble.com/StephanieCadd" target="_blank">
-            <div class="btn btn-one">
-            <span>View All</span>
-            </div>
-        </a>
-      </div>
-    </div>
-  </div>
-        <!--About-->
-        
-        <div id="About" class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
-            <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
-                <img id="ContactImg" src="Content/Contact2.jpg" alt="" uk-cover>
-                <canvas width="400" height="200"></canvas>
-            </div>
-            <div>
-                <div class="uk-card-body">
-                    <h1>About Me</h1>
-                    <p>Hello! I'm Stephanie Cadd, a web/graphic designer and artist. I design and develop websites, illustrate logos and create brands.
-
-                        I am a graduate of The Tech Academy's UI/UX Developer Boot Camp where I trained in the following web developement languages: HTML, CSS, and Javascript. I also graduated Portland Community College's Digital Arts Program learning design principles, Adobe Photoshop and Adobe Illustator to create and edit images.
+                    <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                        <li class="uk-active"><a href="#">Home</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="services.html">What I do</a></li>
+                        <li><a href="#contact" uk-toggle>Contact</a></li>
                         
-                        <br><a href="Content/Resume20.07.14.pdf" target="_blank">My Resume</a></p>
-                </div>
-            </div>
-        </div>
+                    </ul>
 
-        <!--Footer-->
-        <div class="uk-section footercolor">
-            <div class="uk-container">
-                <div class="uk-grid-match uk-child-width-1-2@m" uk-grid>
-                    <div class="footer">
-                        <p>&copy; 2020 Stephanie Dawn Designs</p>
-                    </div>
-                    <div class="footer">
-                        <p style="text-align: right">
-                            <a class="socials" href="https://www.instagram.com/stephaniecadd/" target="_blank"><span uk-icon="instagram"></span></a>
-                            <a class="socials" href="https://www.facebook.com/stephanie.cadd.31/" target="_blank"><span uk-icon="facebook"></span></a>
-                            <a class="socials" href="https://github.com/stephaniecadd" target="_blank"><span uk-icon="github"></span></a>
-                            <a class="socials" href="https://www.linkedin.com/in/stephanie-cadd/" target="_blank"><span uk-icon="linkedin"></span></a>
-                        </p>
-                    </div>
+            
                 </div>
+            </div>
+
+
+            <!--Desktop Navbar-->
+            <div id="DesktopNav" class="uk-container uk-container-small" style="float:left;">
+    
+                <div class="uk-text-center" uk-grid></div>
+                <div>
+                    <img src="Content/StephanieDawnLogoTransparent.png" style="width: 15vw;">
+                    <ul class="uk-nav uk-nav-default" style="padding:6vh 6vh;">
+                        <li class="uk-active uk-margin-top"><a href="#">Home</a></li>
+                        <li class="uk-margin-top"><a href="about.html">About Me</a></li>
+                        <li class="uk-margin-top"><a href="services.html">What I do</a></li>
+                        <li class="uk-margin-top"><a href="#contact" uk-toggle>Contact</a></li>
+                    </ul>
+                    
+                </div>
+                
         
             </div>
-        </div>
+
+            <!--Contact Form-->
+            <div id="contact" uk-modal>
+                <div class="uk-modal-dialog uk-modal-body">
+                    <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+
+                    <form action="https://formspree.io/xvobopkd" method="POST">
+                        <fieldset class="uk-fieldset">
+                    
+                            <legend class="uk-legend">Let's chat!</legend>
+                    
+                            <div class="uk-margin">
+                                <input class="uk-input" type="text" placeholder="What's Your Name?">
+                            </div>
+
+                            <div class="uk-margin">
+                                <input class="uk-input" type="text" placeholder="What's Your Email">
+                            </div>
+                    
+                            <div class="uk-margin">
+                                <select class="uk-select">
+                                    <option>What do you need help with?</option>
+                                    <option>Web Design/Development</option>
+                                    <option>Logo Creation</option>
+                                    <option>Brand Style</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                    
+                            <div class="uk-margin">
+                                <textarea class="uk-textarea" rows="5" placeholder="I'd love to hear more about your project..."></textarea>
+                            </div>
+                        </fieldset>
+                    </form>
+                    <p class="uk-text-right">
+                        <button class="btn uk-button uk-button-primary" type="submit">Submit</button>
+                    </p>
+                </div>
+            </div>
+            <!--End Contact Form-->
+
+            <!--Gallery-->
+            
+            <div class="mainsection uk-container" uk-scrollspy="cls: uk-animation-fade; target: .uk-inline-clip; delay: 300; repeat: true">
+                
+                <!--Row 1-->
+                <div class="uk-grid-small uk-child-width-expand@s uk-text-center" uk-grid>
+                    <!--Full gallery image and modal-->
+                    <div class="uk-text-center">
+                        <div class="uk-inline-clip uk-transition-toggle uk-light" href="#modal-rose" uk-toggle tabindex="0">
+                            <img src="Content/RoseLifeCoachingPortfolio.png" alt="">
+                            <div class="uk-transition-fade uk-overlay-primary uk-position-cover">
+                                <div class=""><p style="color:white;" class="uk-transition-slide-bottom uk-text-center uk-position-bottom">Rose Life Coaching Website Design</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="modal-rose" class="uk-modal-full" uk-modal>
+                        <div class="uk-modal-dialog">
+                            <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+                            <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+                                <div class="uk-padding-large">
+                                    <h2>Rose Life Coaching Home Page</h2>
+                                    <p>Creation of landing page for Rose Life Coaching.</p>
+                                    <div class="uk-margin-large-top uk-column-1-2">
+                                        <hr>
+                                        <h4>Tools Used:</h4>
+                                        <p>Adobe XD</p>
+                                        <hr>
+                                        <h4>Date:</h4>
+                                        <p>July 12th 2020</p>
+                                    </div>
+                                </div>
+                                <div class="uk-background-cover" uk-height-viewport>
+                                    <img class="uk-margin-xlarge-top" src="Content/RoseLifeCoachingPortfolio.png">
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!--Full gallery image and modal end-->
+                    <!--Full gallery image and modal-->
+                    <div class="uk-text-center">
+                        <div class="uk-inline-clip uk-transition-toggle uk-light" href="#modal-yoga" uk-toggle tabindex="0">
+                            <img src="Content/SerenityYogaPortfolio.png" alt="">
+                            <div class="uk-transition-fade uk-overlay-primary uk-position-cover">
+                                <div class=""><p style="color:white;" class="uk-transition-slide-bottom uk-text-center uk-position-bottom">Serenity Yoga Website Design</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="modal-yoga" class="uk-modal-full" uk-modal>
+                        <div class="uk-modal-dialog">
+                            <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+                            <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+                                <div class="uk-padding-large">
+                                    <h2>Serenity Yoga Home Page Design</h2>
+                                    <p>Creation of landing page for Serenity Yoga.</p>
+                                    <div class="uk-margin-large-top uk-column-1-2">
+                                        <hr>
+                                        <h4>Tools Used:</h4>
+                                        <p>Adobe XD</p>
+                                        <hr>
+                                        <h4>Date:</h4>
+                                        <p>June 22nd 2020</p>
+                                    </div>
+                                </div>
+                                <div class="uk-background-cover" uk-height-viewport>
+                                    <img class="uk-margin-xlarge-top" src="Content/SerenityYogaPortfolio.png">
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!--Full gallery image and modal end-->
+                    <!--Full gallery image and modal-->
+                    <div class="uk-text-center">
+                        <div class="uk-inline-clip uk-transition-toggle uk-light" href="#modal-love" uk-toggle tabindex="0">
+                            <img src="Content/SplitScreenPortfolio.png" alt="">
+                            <div class="uk-transition-fade uk-overlay-primary uk-position-cover">
+                                <div class=""><p style="color:white;" class="uk-transition-slide-bottom uk-text-center uk-position-bottom">Love Roasters Website Design</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="modal-love" class="uk-modal-full" uk-modal>
+                        <div class="uk-modal-dialog">
+                            <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+                            <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+                                <div class="uk-padding-large">
+                                    <h2>Love Roasters Home Page Design</h2>
+                                    <p>Creation of landing page for Love Roasters.</p>
+                                    <div class="uk-margin-large-top uk-column-1-2">
+                                        <hr>
+                                        <h4>Tools Used:</h4>
+                                        <p>Adobe Photoshop, Adobe XD</p>
+                                        <hr>
+                                        <h4>Date:</h4>
+                                        <p>May 4th 2020</p>
+                                    </div>
+                                </div>
+                                <div class="uk-background-cover" uk-height-viewport>
+                                    <img class="uk-margin-xlarge-top" src="Content/SplitScreenPortfolio.png">
+                                </div>
+                                 
+                            </div>
+                        </div>
+                    </div>
+                    <!--Full gallery image and modal end-->
+                </div>
+                <!--End Row 1-->
+                 <!--Row 2-->
+                <div class="uk-grid-small uk-child-width-expand@s uk-text-center" uk-grid>
+                    <!--Full gallery image and modal-->
+                    <div class="uk-text-center">
+                        <div class="uk-inline-clip uk-transition-toggle uk-light" href="#modal-elephant" uk-toggle tabindex="0">
+                            <img src="Content/ElephantSitePortfolio.png" alt="">
+                            <div class="uk-transition-fade uk-overlay-primary uk-position-cover">
+                                <div class=""><p style="color:white;" class="uk-transition-slide-bottom uk-text-center uk-position-bottom">Elephant Sanctuary Website Design</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="modal-elephant" class="uk-modal-full" uk-modal>
+                        <div class="uk-modal-dialog">
+                            <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+                            <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+                                <div class="uk-padding-large">
+                                    <h2>Elephant Sactuary Home Page Design</h2>
+                                    <p>Creation of landing page for Elephant Sactuary.</p>
+                                    <div class="uk-margin-large-top uk-column-1-2">
+                                        <hr>
+                                        <h4>Tools Used:</h4>
+                                        <p>Adobe Photoshop</p>
+                                        <hr>
+                                        <h4>Date:</h4>
+                                        <p>May 4th 2020</p>
+                                    </div>
+                                </div>
+                                <div class="uk-background-cover" uk-height-viewport>
+                                    <img class="uk-margin-xlarge-top" src="Content/ElephantSitePortfolio.png">
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!--Full gallery image and modal end-->
+                    <!--Full gallery image and modal-->
+                    <div class="uk-text-center">
+                        <div class="uk-inline-clip uk-transition-toggle uk-light" href="#modal-sweet" uk-toggle tabindex="0">
+                            <img src="Content/SweetTreatsPortfolio.png" alt="">
+                            <div class="uk-transition-fade uk-overlay-primary uk-position-cover">
+                                <div class=""><p style="color:white;" class="uk-transition-slide-bottom uk-text-center uk-position-bottom">Sweet Treats Website Design</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="modal-sweet" class="uk-modal-full" uk-modal>
+                        <div class="uk-modal-dialog">
+                            <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+                            <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+                                <div class="uk-padding-large">
+                                    <h2>Sweet Treats Home Page Design</h2>
+                                    <p>Creation of landing page for Sweet Treats Bakery.</p>
+                                    <div class="uk-margin-large-top uk-column-1-2">
+                                        <hr>
+                                        <h4>Tools Used:</h4>
+                                        <p>Adobe XD</p>
+                                        <hr>
+                                        <h4>Date:</h4>
+                                        <p>June 22nd 2020</p>
+                                    </div>
+                                </div>
+                                <div class="uk-background-cover" uk-height-viewport>
+                                    <img class="uk-margin-xlarge-top" src="Content/SweetTreatsPortfolio.png">
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!--Full gallery image and modal end-->
+                    <!--Full gallery image and modal-->
+                    <div class="uk-text-center">
+                        <div class="uk-inline-clip uk-transition-toggle uk-light" href="#modal-eav" uk-toggle tabindex="0">
+                            <img src="Content/EAVNetworkPortfolio.png" alt="">
+                            <div class="uk-transition-fade uk-overlay-primary uk-position-cover">
+                                <div class=""><p style="color:white;" class="uk-transition-slide-bottom uk-text-center uk-position-bottom">EAV Website Design</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="modal-eav" class="uk-modal-full" uk-modal>
+                        <div class="uk-modal-dialog">
+                            <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+                            <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+                                <div class="uk-padding-large">
+                                    <h2>Emerson and Vaugh Home Page Design and Development</h2>
+                                    <p>Creation of landing page for Emerson and Vaughn.</p>
+                                    <div class="uk-margin-large-top uk-column-1-2">
+                                        <hr>
+                                        <h4>Tools Used:</h4>
+                                        <p>HTML, CSS, JavaScript</p>
+                                        <hr>
+                                        <h4>Date:</h4>
+                                        <p>September 10th 2020</p>
+                                    </div>
+                                </div>
+                                <div class="uk-background-cover" uk-height-viewport>
+                                    <img class="uk-margin-xlarge-top" src="Content/EAVNetworkPortfolio.png">
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!--Full gallery image and modal end-->
+                </div>
+                 <!--End Row 2-->
+                  <!--Row 3-->
+                <div class="uk-grid-small uk-child-width-expand@s uk-text-center" uk-grid>
+                    <!--Full gallery image and modal-->
+                    <div class="uk-text-center">
+                        <div class="uk-inline-clip uk-transition-toggle uk-light" href="#modal-kelsey" uk-toggle tabindex="0">
+                            <img src="Content/ModeratelyKelseyLogoPortfolio.png" alt="">
+                            <div class="uk-transition-fade uk-overlay-primary uk-position-cover">
+                                <div class=""><p style="color:white;" class="uk-transition-slide-bottom uk-text-center uk-position-bottom">Moderately Kelsey Logo Design</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="modal-kelsey" class="uk-modal-full" uk-modal>
+                        <div class="uk-modal-dialog">
+                            <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+                            <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+                                <div class="uk-padding-large">
+                                    <h2>Moderately Kelsey Logo Creation</h2>
+                                    <p>Logo Design for Moderately Kelsey.</p>
+                                    <div class="uk-margin-large-top uk-column-1-2">
+                                        <hr>
+                                        <h4>Tools Used:</h4>
+                                        <p>Adobe Illustrator, Adobe Photoshop</p>
+                                        <hr>
+                                        <h4>Date:</h4>
+                                        <p>September 15th 2020</p>
+                                    </div>
+                                </div>
+                                <div class="uk-background-cover" uk-height-viewport>
+                                    <img class="uk-margin-xlarge-top" src="Content/ModeratelyKelseyLogoPortfolio.png">
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!--Full gallery image and modal end-->
+                    <!--Full gallery image and modal-->
+                    <div class="uk-text-center">
+                        <div class="uk-inline-clip uk-transition-toggle uk-light" href="#modal-eavlogo" uk-toggle tabindex="0">
+                            <img src="Content/EAVLogoPortfolio.png" alt="">
+                            <div class="uk-transition-fade uk-overlay-primary uk-position-cover">
+                                <div class=""><p style="color:white;" class="uk-transition-slide-bottom uk-text-center uk-position-bottom">EAV Logo Design</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="modal-eavlogo" class="uk-modal-full" uk-modal>
+                        <div class="uk-modal-dialog">
+                            <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+                            <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+                                <div class="uk-padding-large">
+                                    <h2>Emerson and Vaughn Logo Creation</h2>
+                                    <p>Logo Design for Emerson and Vaughn</p>
+                                    <div class="uk-margin-large-top uk-column-1-2">
+                                        <hr>
+                                        <h4>Tools Used:</h4>
+                                        <p>Adobe Illustrator, Adobe Photoshop</p>
+                                        <hr>
+                                        <h4>Date:</h4>
+                                        <p>September 21st 2019</p>
+                                    </div>
+                                </div>
+                                <div class="uk-background-cover" uk-height-viewport>
+                                    <img class="uk-margin-xlarge-top" src="Content/EAVLogoPortfolio.png">
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!--Full gallery image and modal end-->
+                    <!--Full gallery image and modal-->
+                    <div class="uk-text-center">
+                        <div class="uk-inline-clip uk-transition-toggle uk-light" href="#modal-safeguard" uk-toggle tabindex="0">
+                            <img src="Content/SafeguardLogoPortfolio.png" alt="">
+                            <div class="uk-transition-fade uk-overlay-primary uk-position-cover">
+                                <div class=""><p style="color:white;" class="uk-transition-slide-bottom uk-text-center uk-position-bottom">Safeguard & Blue Birds Logo Design</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="modal-safeguard" class="uk-modal-full" uk-modal>
+                        <div class="uk-modal-dialog">
+                            <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+                            <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+                                <div class="uk-padding-large">
+                                    <h2>Safeguard & Blue Bird Homes Logo Creation</h2>
+                                    <p>Logo Design for Safeguard Construction and Sub-company Blue Bird Homes.</p>
+                                    <div class="uk-margin-large-top uk-column-1-2">
+                                        <hr>
+                                        <h4>Tools Used:</h4>
+                                        <p>Adobe Illustrator, Adobe Photoshop</p>
+                                        <hr>
+                                        <h4>Date:</h4>
+                                        <p>August 18th 2020</p>
+                                    </div>
+                                </div>
+                                <div class="uk-background-cover" uk-height-viewport>
+                                    <img class="uk-margin-xlarge-top" src="Content/SafeguardLogoPortfolio.png">
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!--Full gallery image and modal end-->
+                </div>
+                 <!--End Row 3-->
+                </div>
+            </div>
+
+
         
+
+                <!--Footer-->
+                <div class="uk-section">
+                    <div class="uk-container">
+                        <div class="uk-grid-match uk-child-width-1-4@m" uk-grid>
+                            <div>
+                            <p class="socials">
+                                <a class="" style="color: grey" href="https://www.instagram.com/stephaniecadd/" target="_blank"><span uk-icon="instagram"></span></a>
+                                <a class="" style="color: grey" href="https://www.facebook.com/stephanie.cadd.31/" target="_blank"><span uk-icon="facebook"></span></a>
+                                <a class="" style="color: grey" href="https://github.com/stephaniecadd" target="_blank"><span uk-icon="github"></span></a>
+                                <a class="" style="color: grey" href="https://www.linkedin.com/in/stephanie-cadd/" target="_blank"><span uk-icon="linkedin"></span></a>
+                            </p>
+                        </div>
+                            <div>
+                                <p style="text-align: center">&copy; 2020 Stephanie Dawn Designs</p>
+                            </div>
+                            <div>
+                                <p style="text-align: center">Portland, OR</p>
+                            </div>
+                            <div>
+                                <p style="text-align: center">stephaniecadd94@gmail.com</p>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                </div>
+    
+        
+
         <script>
         </script>
         
