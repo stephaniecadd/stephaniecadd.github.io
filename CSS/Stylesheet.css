@@ -81,9 +81,9 @@ a:visited {
 }
 
 .btn {
-    height: 5vh;
-	text-align: center;
-	padding: 0vh 3vw;
+  text-align: center;
+  width: 10vw;
+	padding: 1.5vh 1vw;
     cursor: pointer;
     font-size: 1.5vh;
     border-radius: 1vw;
@@ -93,9 +93,8 @@ a:visited {
 }
 .btn:hover {
   background-color: #e489aa;
-  height: 5vh;
 	text-align: center;
-	padding: 0vh 3vw;
+	padding: 1.5vh 1vw;
     cursor: pointer;
     font-size: 1.5vh;
     border-radius: 1vw;
@@ -104,9 +103,8 @@ a:visited {
 }
 .btn:visited {
   background-color: #e489aa;
-  height: 5vh;
 	text-align: center;
-	padding: 0vh 3vw;
+	padding: 1.5vh 1vw;
     cursor: pointer;
     font-size: 1.5vh;
     border-radius: 1vw;
